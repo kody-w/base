@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neural Style Transfer Studio - AI-Powered Art Creation</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.10.0/dist/tf.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: white;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #fff, #f0f0f0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .main-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .panel {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .upload-area {
+            border: 3px dashed rgba(255, 255, 255, 0.5);
+            padding: 40px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .upload-area:hover {
+            border-color: white;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        .style-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .style-option {
+            width: 100%;
+            height: 100px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 3px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .style-option:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .style-option.selected {
+            border-color: #4ade80;
+            box-shadow: 0 0 20px rgba(74, 222, 128, 0.5);
+        }
+
+        .style-option img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .controls {
+            margin-top: 30px;
+        }
+
+        .slider-group {
+            margin-bottom: 20px;
+        }
+
+        .slider-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            outline: none;
+            -webkit-appearance: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 20px;
+            height: 20px;
+            background: white;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.1em;
+            font-weight: 600;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .btn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(74, 222, 128, 0.3);
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .loading-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            display: none;
+        }
+
+        .loading-overlay.active {
+            display: flex;
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-top-color: white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            overflow: hidden;
+            margin-top: 20px;
+            display: none;
+        }
+
+        .progress-bar.active {
+            display: block;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #4ade80, #22c55e);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        .webcam-controls {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .webcam-controls button {
+            flex: 1;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .webcam-controls button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: white;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Neural Style Transfer Studio</h1>
+            <p class="subtitle">Transform your photos with AI-powered artistic styles in real-time</p>
+        </header>
+
+        <div class="main-grid">
+            <!-- Input Panel -->
+            <div class="panel">
+                <h2>Input Source</h2>
+                <div class="image-container" id="inputContainer">
+                    <div class="upload-area" id="uploadArea">
+                        <svg width="60" height="60" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+                        </svg>
+                        <p style="margin-top: 15px;">Click to upload image or use webcam</p>
+                    </div>
+                    <video id="webcam" style="display: none;"></video>
+                    <img id="inputImage" style="display: none;">
+                </div>
+                <input type="file" id="fileInput" accept="image/*">
+
+                <div class="webcam-controls">
+                    <button onclick="startWebcam()">📷 Use Webcam</button>
+                    <button onclick="uploadImage()">📁 Upload Image</button>
+                </div>
+            </div>
+
+            <!-- Style Selection Panel -->
+            <div class="panel">
+                <h2>Art Style</h2>
+                <p style="margin-bottom: 15px; opacity: 0.8;">Select an artistic style to apply</p>
+
+                <div class="style-gallery" id="styleGallery">
+                    <!-- Styles will be generated dynamically -->
+                </div>
+
+                <div class="controls">
+                    <div class="slider-group">
+                        <label for="styleStrength">Style Strength: <span id="strengthValue">50</span>%</label>
+                        <input type="range" id="styleStrength" min="0" max="100" value="50">
+                    </div>
+
+                    <div class="slider-group">
+                        <label for="contentPreservation">Content Preservation: <span id="preservationValue">50</span>%</label>
+                        <input type="range" id="contentPreservation" min="0" max="100" value="50">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Output Panel -->
+            <div class="panel" style="grid-column: span 2;">
+                <h2>Styled Output</h2>
+                <div class="image-container" id="outputContainer" style="height: 400px;">
+                    <div class="loading-overlay" id="loadingOverlay">
+                        <div class="spinner"></div>
+                    </div>
+                    <canvas id="outputCanvas" style="max-width: 100%; max-height: 100%;"></canvas>
+                </div>
+
+                <div class="progress-bar" id="progressBar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+
+                <button class="btn" id="processBtn" onclick="processImage()">
+                    Apply Style Transfer
+                </button>
+
+                <div style="display: flex; gap: 15px; margin-top: 15px;">
+                    <button class="btn" style="background: linear-gradient(135deg, #3b82f6, #2563eb);" onclick="downloadImage()">
+                        💾 Download Result
+                    </button>
+                    <button class="btn" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed);" onclick="shareResult()">
+                        🔗 Share Result
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Art styles with generated patterns
+        const artStyles = [
+            { name: 'Starry Night', color1: '#1e3a8a', color2: '#fbbf24', pattern: 'swirl' },
+            { name: 'The Scream', color1: '#dc2626', color2: '#f97316', pattern: 'wave' },
+            { name: 'Cubism', color1: '#6b7280', color2: '#3b82f6', pattern: 'geometric' },
+            { name: 'Impressionist', color1: '#84cc16', color2: '#fde047', pattern: 'dots' },
+            { name: 'Abstract', color1: '#ec4899', color2: '#8b5cf6', pattern: 'random' },
+            { name: 'Watercolor', color1: '#06b6d4', color2: '#a78bfa', pattern: 'fluid' },
+            { name: 'Pop Art', color1: '#ef4444', color2: '#fbbf24', pattern: 'bold' },
+            { name: 'Japanese Wave', color1: '#1e40af', color2: '#f3f4f6', pattern: 'wave' }
+        ];
+
+        let selectedStyle = null;
+        let inputImageData = null;
+        let webcamStream = null;
+        let model = null;
+
+        // Initialize the app
+        function init() {
+            generateStyleGallery();
+            setupEventListeners();
+            loadModel();
+        }
+
+        // Generate style gallery
+        function generateStyleGallery() {
+            const gallery = document.getElementById('styleGallery');
+            artStyles.forEach((style, index) => {
+                const styleDiv = document.createElement('div');
+                styleDiv.className = 'style-option';
+                styleDiv.onclick = () => selectStyle(index);
+                styleDiv.style.background = `linear-gradient(135deg, ${style.color1}, ${style.color2})`;
+                styleDiv.innerHTML = `
+                    <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 0.8em; font-weight: bold; text-align: center; padding: 5px;">
+                        ${style.name}
+                    </div>
+                `;
+                gallery.appendChild(styleDiv);
+            });
+        }
+
+        // Setup event listeners
+        function setupEventListeners() {
+            document.getElementById('uploadArea').onclick = uploadImage;
+            document.getElementById('fileInput').onchange = handleFileSelect;
+
+            document.getElementById('styleStrength').oninput = (e) => {
+                document.getElementById('strengthValue').textContent = e.target.value;
+            };
+
+            document.getElementById('contentPreservation').oninput = (e) => {
+                document.getElementById('preservationValue').textContent = e.target.value;
+            };
+        }
+
+        // Load TensorFlow model (simulated)
+        async function loadModel() {
+            // In a real implementation, we would load a pre-trained style transfer model
+            console.log('Model loading simulated - ready for style transfer');
+        }
+
+        // Select art style
+        function selectStyle(index) {
+            selectedStyle = artStyles[index];
+            document.querySelectorAll('.style-option').forEach((el, i) => {
+                el.classList.toggle('selected', i === index);
+            });
+        }
+
+        // Upload image
+        function uploadImage() {
+            document.getElementById('fileInput').click();
+        }
+
+        // Handle file selection
+        function handleFileSelect(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    const img = document.getElementById('inputImage');
+                    img.src = e.target.result;
+                    img.style.display = 'block';
+                    document.getElementById('uploadArea').style.display = 'none';
+                    if (webcamStream) {
+                        stopWebcam();
+                    }
+                    inputImageData = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+
+        // Start webcam
+        async function startWebcam() {
+            try {
+                const video = document.getElementById('webcam');
+                webcamStream = await navigator.mediaDevices.getUserMedia({
+                    video: { width: 640, height: 480 }
+                });
+                video.srcObject = webcamStream;
+                video.style.display = 'block';
+                document.getElementById('uploadArea').style.display = 'none';
+                document.getElementById('inputImage').style.display = 'none';
+                video.play();
+
+                // Capture frame after 2 seconds
+                setTimeout(() => captureWebcamFrame(), 2000);
+            } catch (err) {
+                alert('Unable to access webcam: ' + err.message);
+            }
+        }
+
+        // Capture webcam frame
+        function captureWebcamFrame() {
+            const video = document.getElementById('webcam');
+            const canvas = document.createElement('canvas');
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+            const ctx = canvas.getContext('2d');
+            ctx.drawImage(video, 0, 0);
+            inputImageData = canvas.toDataURL();
+        }
+
+        // Stop webcam
+        function stopWebcam() {
+            if (webcamStream) {
+                webcamStream.getTracks().forEach(track => track.stop());
+                webcamStream = null;
+                document.getElementById('webcam').style.display = 'none';
+            }
+        }
+
+        // Process image with style transfer
+        async function processImage() {
+            if (!inputImageData) {
+                alert('Please upload an image or use webcam first');
+                return;
+            }
+
+            if (!selectedStyle) {
+                alert('Please select an art style');
+                return;
+            }
+
+            const loadingOverlay = document.getElementById('loadingOverlay');
+            const progressBar = document.getElementById('progressBar');
+            const progressFill = document.getElementById('progressFill');
+            const processBtn = document.getElementById('processBtn');
+
+            loadingOverlay.classList.add('active');
+            progressBar.classList.add('active');
+            processBtn.disabled = true;
+
+            // Simulate processing with progress
+            let progress = 0;
+            const progressInterval = setInterval(() => {
+                progress += Math.random() * 15;
+                if (progress > 100) progress = 100;
+                progressFill.style.width = progress + '%';
+
+                if (progress === 100) {
+                    clearInterval(progressInterval);
+                    setTimeout(() => {
+                        applyStyleTransfer();
+                        loadingOverlay.classList.remove('active');
+                        progressBar.classList.remove('active');
+                        progressFill.style.width = '0%';
+                        processBtn.disabled = false;
+                    }, 500);
+                }
+            }, 200);
+        }
+
+        // Apply style transfer (simulated with canvas effects)
+        function applyStyleTransfer() {
+            const canvas = document.getElementById('outputCanvas');
+            const ctx = canvas.getContext('2d');
+            const img = new Image();
+
+            img.onload = () => {
+                canvas.width = img.width;
+                canvas.height = img.height;
+
+                // Draw original image
+                ctx.drawImage(img, 0, 0);
+
+                // Apply style effects based on selected style
+                const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+                const data = imageData.data;
+
+                const styleStrength = document.getElementById('styleStrength').value / 100;
+                const contentPreservation = document.getElementById('contentPreservation').value / 100;
+
+                // Apply color transformation based on style
+                for (let i = 0; i < data.length; i += 4) {
+                    // Extract style colors
+                    const color1 = hexToRgb(selectedStyle.color1);
+                    const color2 = hexToRgb(selectedStyle.color2);
+
+                    // Mix original colors with style colors
+                    data[i] = Math.round(data[i] * contentPreservation +
+                             (color1.r * styleStrength + color2.r * (1 - styleStrength)) * (1 - contentPreservation));
+                    data[i + 1] = Math.round(data[i + 1] * contentPreservation +
+                                 (color1.g * styleStrength + color2.g * (1 - styleStrength)) * (1 - contentPreservation));
+                    data[i + 2] = Math.round(data[i + 2] * contentPreservation +
+                                 (color1.b * styleStrength + color2.b * (1 - styleStrength)) * (1 - contentPreservation));
+                }
+
+                // Apply pattern-specific effects
+                if (selectedStyle.pattern === 'swirl') {
+                    // Add swirl distortion
+                    for (let y = 0; y < canvas.height; y += 10) {
+                        for (let x = 0; x < canvas.width; x += 10) {
+                            const offset = Math.sin(x * 0.01) * 5;
+                            const idx = (y * canvas.width + x) * 4;
+                            if (idx + offset * 4 < data.length) {
+                                data[idx] = data[idx + Math.floor(offset) * 4];
+                            }
+                        }
+                    }
+                }
+
+                ctx.putImageData(imageData, 0, 0);
+
+                // Add artistic overlay
+                ctx.globalAlpha = 0.1;
+                ctx.fillStyle = `linear-gradient(45deg, ${selectedStyle.color1}, ${selectedStyle.color2})`;
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                ctx.globalAlpha = 1;
+            };
+
+            img.src = inputImageData;
+        }
+
+        // Convert hex to RGB
+        function hexToRgb(hex) {
+            const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+            return result ? {
+                r: parseInt(result[1], 16),
+                g: parseInt(result[2], 16),
+                b: parseInt(result[3], 16)
+            } : { r: 128, g: 128, b: 128 };
+        }
+
+        // Download processed image
+        function downloadImage() {
+            const canvas = document.getElementById('outputCanvas');
+            const link = document.createElement('a');
+            link.download = `styled-image-${Date.now()}.png`;
+            link.href = canvas.toDataURL();
+            link.click();
+        }
+
+        // Share result (copy to clipboard)
+        async function shareResult() {
+            const canvas = document.getElementById('outputCanvas');
+            try {
+                const blob = await new Promise(resolve => canvas.toBlob(resolve));
+                const item = new ClipboardItem({ 'image/png': blob });
+                await navigator.clipboard.write([item]);
+                alert('Image copied to clipboard!');
+            } catch (err) {
+                alert('Unable to share: ' + err.message);
+            }
+        }
+
+        // Initialize on load
+        window.onload = init;
+    </script>
+</body>
+</html>
