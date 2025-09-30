@@ -901,7 +901,7 @@
     <script>
         // Target repository
         const REPO_OWNER = 'kody-w';
-        const REPO_NAME = 'localFirstTools';
+        const REPO_NAME = 'base';
         const BRANCH = 'main';
         
         // Detect if running locally
@@ -1285,14 +1285,22 @@
                 
                 const data = await response.json();
                 
-                // Separate main files and archive files
-                const mainFiles = [];
-                const archiveFiles = [];
-                
+                // Organize files by category
+                const categorizedFiles = {
+                    'AI Tools': [],
+                    'Games': [],
+                    'Development': [],
+                    'Business': [],
+                    'Productivity': [],
+                    'Media': [],
+                    'Utilities': [],
+                    'Archive': []
+                };
+
                 data.tree.forEach(item => {
-                    if (item.type === 'blob' && 
+                    if (item.type === 'blob' &&
                         (item.path.endsWith('.html') || item.path.endsWith('.htm'))) {
-                        
+
                         const file = {
                             path: item.path,
                             url: `https://github.com/${REPO_OWNER}/${REPO_NAME}/blob/${BRANCH}/${item.path}`,
@@ -1300,18 +1308,53 @@
                             // Add appropriate URL based on environment
                             pages_url: getFileUrl(item.path)
                         };
-                        
-                        // Check if file is in archive
+
+                        // Categorize based on path
                         if (item.path.includes('archive/')) {
-                            archiveFiles.push(file);
+                            categorizedFiles['Archive'].push(file);
+                        } else if (item.path.includes('apps/ai-tools/')) {
+                            categorizedFiles['AI Tools'].push(file);
+                        } else if (item.path.includes('apps/games/')) {
+                            categorizedFiles['Games'].push(file);
+                        } else if (item.path.includes('apps/development/')) {
+                            categorizedFiles['Development'].push(file);
+                        } else if (item.path.includes('apps/business/')) {
+                            categorizedFiles['Business'].push(file);
+                        } else if (item.path.includes('apps/productivity/')) {
+                            categorizedFiles['Productivity'].push(file);
+                        } else if (item.path.includes('apps/media/')) {
+                            categorizedFiles['Media'].push(file);
+                        } else if (item.path.includes('apps/utilities/')) {
+                            categorizedFiles['Utilities'].push(file);
+                        } else if (item.path.includes('apps/')) {
+                            // Other apps folder items
+                            const category = item.path.split('/')[1];
+                            if (!categorizedFiles[category]) {
+                                categorizedFiles[category] = [];
+                            }
+                            categorizedFiles[category].push(file);
                         } else {
-                            // Exclude gallery-related files
+                            // Root files - exclude index and other system files
                             const filename = item.path.split('/').pop().toLowerCase();
                             const excludeFiles = ['index.html', 'template.html', 'example.html', 'test.html', 'gallery.html'];
                             if (!excludeFiles.includes(filename)) {
-                                mainFiles.push(file);
+                                // Add to utilities as default
+                                categorizedFiles['Utilities'].push(file);
                             }
                         }
+                    }
+                });
+
+                // Flatten to maintain compatibility with existing structure
+                const mainFiles = [];
+                const archiveFiles = categorizedFiles['Archive'];
+
+                Object.keys(categorizedFiles).forEach(category => {
+                    if (category !== 'Archive') {
+                        categorizedFiles[category].forEach(file => {
+                            file.category = category;
+                            mainFiles.push(file);
+                        });
                     }
                 });
                 
@@ -1368,7 +1411,7 @@
         // Display gallery content
         function displayGallery(data) {
             mainContent.innerHTML = '';
-            
+
             const files = currentView === 'main' ? data.mainFiles : data.archiveFiles;
             if (!files || files.length === 0) {
                 mainContent.innerHTML = `
@@ -1378,33 +1421,69 @@
                 `;
                 return;
             }
-            
+
             // Sort files
             const sortedFiles = sortFiles(files);
             const pinned = getPinnedTools();
-            const votes = getVotes();
-            const userVotes = getUserVotes();
-            
-            // Create sections
-            const pinnedFiles = sortedFiles.filter(f => pinned.includes(f.path));
-            const unpinnedFiles = sortedFiles.filter(f => !pinned.includes(f.path));
-            
-            // Display pinned section if there are pinned items
-            if (pinnedFiles.length > 0 && currentView === 'main') {
-                const pinnedSection = createSection('Pinned Tools', pinnedFiles, true);
-                mainContent.appendChild(pinnedSection);
+
+            // Create sections by category for main view
+            if (currentView === 'main') {
+                // Display pinned section if there are pinned items
+                const pinnedFiles = sortedFiles.filter(f => pinned.includes(f.path));
+                if (pinnedFiles.length > 0) {
+                    const pinnedSection = createSection('⭐ Pinned Tools', pinnedFiles, true);
+                    mainContent.appendChild(pinnedSection);
+                }
+
+                // Group files by category
+                const categories = {};
+                const categoryOrder = ['AI Tools', 'Games', 'Development', 'Productivity', 'Business', 'Media', 'Utilities'];
+                const categoryEmojis = {
+                    'AI Tools': '🤖',
+                    'Games': '🎮',
+                    'Development': '💻',
+                    'Productivity': '📊',
+                    'Business': '💼',
+                    'Media': '🎵',
+                    'Utilities': '🔧'
+                };
+
+                sortedFiles.forEach(file => {
+                    if (!pinned.includes(file.path)) {
+                        const category = file.category || 'Utilities';
+                        if (!categories[category]) {
+                            categories[category] = [];
+                        }
+                        categories[category].push(file);
+                    }
+                });
+
+                // Display categories in order
+                categoryOrder.forEach(category => {
+                    if (categories[category] && categories[category].length > 0) {
+                        const emoji = categoryEmojis[category] || '📦';
+                        const sectionTitle = `${emoji} ${category}`;
+                        const section = createSection(sectionTitle, categories[category], false);
+                        mainContent.appendChild(section);
+                    }
+                });
+
+                // Display any remaining categories not in the order
+                Object.keys(categories).forEach(category => {
+                    if (!categoryOrder.includes(category) && categories[category].length > 0) {
+                        const section = createSection(`📦 ${category}`, categories[category], false);
+                        mainContent.appendChild(section);
+                    }
+                });
+            } else {
+                // Archive view - simple list
+                const archiveSection = createSection('📚 Archive', sortedFiles, false);
+                mainContent.appendChild(archiveSection);
             }
-            
-            // Display main section
-            const sectionTitle = currentView === 'main' ? 
-                (pinnedFiles.length > 0 ? 'All Tools' : 'Creative Tools') : 
-                'Archive';
-            const mainSection = createSection(sectionTitle, unpinnedFiles, false);
-            mainContent.appendChild(mainSection);
-            
+
             // Add event listeners
             addEventListeners();
-            
+
             // Restore search term if any
             if (searchInput.value) {
                 filterArtworks(searchInput.value.toLowerCase());
