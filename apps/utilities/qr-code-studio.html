@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Music Composer</title>
+    <title>QR Code Studio</title>
     <style>
         * {
             margin: 0;
@@ -13,7 +13,7 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
             min-height: 100vh;
             display: flex;
             justify-content: center;
@@ -41,7 +41,7 @@
             font-size: 36px;
             font-weight: bold;
             margin-bottom: 10px;
-            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -73,7 +73,7 @@
         .feature-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-            border-color: #fa709a;
+            border-color: #30cfd0;
         }
 
         .feature-icon {
@@ -122,7 +122,7 @@
         }
 
         .btn-primary {
-            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
             color: white;
         }
 
@@ -133,12 +133,12 @@
 
         .btn-secondary {
             background: white;
-            color: #fa709a;
-            border: 2px solid #fa709a;
+            color: #30cfd0;
+            border: 2px solid #30cfd0;
         }
 
         .btn-secondary:hover {
-            background: #fa709a;
+            background: #30cfd0;
             color: white;
         }
 
@@ -171,7 +171,7 @@
         .stat-value {
             font-size: 32px;
             font-weight: bold;
-            color: #fa709a;
+            color: #30cfd0;
             margin-bottom: 5px;
         }
 
@@ -203,7 +203,7 @@
 
         .input-field:focus {
             outline: none;
-            border-color: #fa709a;
+            border-color: #30cfd0;
         }
 
         textarea.input-field {
@@ -224,7 +224,7 @@
 
         .spinner {
             border: 3px solid #f3f3f3;
-            border-top: 3px solid #fa709a;
+            border-top: 3px solid #30cfd0;
             border-radius: 50%;
             width: 40px;
             height: 40px;
@@ -290,7 +290,7 @@
 
         .progress-fill {
             height: 100%;
-            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
             transition: width 0.3s;
             display: flex;
             align-items: center;
@@ -349,40 +349,40 @@
         }
 
         ::-webkit-scrollbar-thumb {
-            background: #fa709a;
+            background: #30cfd0;
             border-radius: 10px;
         }
 
         ::-webkit-scrollbar-thumb:hover {
-            background: #fee140;
+            background: #330867;
         }
     </style>
 </head>
 <body>
     <div class="app-container animate-in">
         <div class="app-header">
-            <h1 class="app-title">AI Music Composer</h1>
-            <p class="app-description">Generate MIDI music from text descriptions</p>
+            <h1 class="app-title">QR Code Studio</h1>
+            <p class="app-description">Advanced QR code generator</p>
         </div>
 
         <div class="features">
             
-            <div class="feature-card" data-feature="Genre Selection">
-                <div class="feature-icon">🎵</div>
-                <div class="feature-title">Genre Selection</div>
-                <div class="feature-desc">Choose music genre</div>
+            <div class="feature-card" data-feature="Custom Design">
+                <div class="feature-icon">🎨</div>
+                <div class="feature-title">Custom Design</div>
+                <div class="feature-desc">Design QR codes</div>
             </div>
         
-            <div class="feature-card" data-feature="Mood Control">
-                <div class="feature-icon">🎭</div>
-                <div class="feature-title">Mood Control</div>
-                <div class="feature-desc">Set emotional tone</div>
+            <div class="feature-card" data-feature="Logo Embed">
+                <div class="feature-icon">🏷️</div>
+                <div class="feature-title">Logo Embed</div>
+                <div class="feature-desc">Add logos</div>
             </div>
         
-            <div class="feature-card" data-feature="Tempo Adjust">
-                <div class="feature-icon">⏱️</div>
-                <div class="feature-title">Tempo Adjust</div>
-                <div class="feature-desc">Control music tempo</div>
+            <div class="feature-card" data-feature="Bulk Generate">
+                <div class="feature-icon">📦</div>
+                <div class="feature-title">Bulk Generate</div>
+                <div class="feature-desc">Generate multiple</div>
             </div>
         
         </div>
@@ -438,10 +438,10 @@
                 <button class="modal-close" onclick="closeHelp()">&times;</button>
             </div>
             <div>
-                <p>This application provides advanced Ai Music Composer functionality.</p>
+                <p>This application provides advanced Qr Code Studio functionality.</p>
                 <h3>Features:</h3>
                 <ul>
-                    <li><strong>Genre Selection:</strong> Choose music genre</li><li><strong>Mood Control:</strong> Set emotional tone</li><li><strong>Tempo Adjust:</strong> Control music tempo</li>
+                    <li><strong>Custom Design:</strong> Design QR codes</li><li><strong>Logo Embed:</strong> Add logos</li><li><strong>Bulk Generate:</strong> Generate multiple</li>
                 </ul>
                 <h3>Instructions:</h3>
                 <ol>
@@ -513,7 +513,7 @@
 
         // Core operation logic
         function performOperation(input) {
-            return 'Generated music: ' + input + ' (MIDI sequence created)';
+            return 'QR code generated for: ' + input.substring(0, 50);
         }
 
         // Update statistics
@@ -547,7 +547,7 @@
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = 'Ai Music Composer_export_' + Date.now() + '.txt';
+            a.download = 'Qr Code Studio_export_' + Date.now() + '.txt';
             a.click();
             URL.revokeObjectURL(url);
 
@@ -572,7 +572,7 @@
                 position: fixed;
                 top: 20px;
                 right: 20px;
-                background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+                background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
                 color: white;
                 padding: 15px 25px;
                 border-radius: 10px;
@@ -626,7 +626,7 @@
 
         // Initialize app
         window.addEventListener('load', () => {
-            console.log('AI Music Composer loaded successfully');
+            console.log('QR Code Studio loaded successfully');
             updateStats();
         });
     </script>

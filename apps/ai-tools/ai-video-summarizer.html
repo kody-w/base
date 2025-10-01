@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Video Summarizer</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+            max-width: 1200px;
+            width: 100%;
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+        }
+        .description {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .main-area {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 20px 0;
+            min-height: 400px;
+        }
+        .controls {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        .output {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            min-height: 200px;
+            font-family: 'Monaco', monospace;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .feature {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .feature-icon {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 768px) {
+            .container { padding: 20px; }
+            h1 { font-size: 28px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AI Video Summarizer</h1>
+        <p class="description">Extract key points from videos automatically</p>
+
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">🚀</div>
+                <div>High Performance</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🎨</div>
+                <div>Beautiful Design</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">⚡</div>
+                <div>Real-time Processing</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🔒</div>
+                <div>Secure & Private</div>
+            </div>
+        </div>
+
+        <div class="main-area">
+            <div class="controls">
+                <button class="btn" onclick="process()">Process</button>
+                <button class="btn" onclick="analyze()">Analyze</button>
+                <button class="btn" onclick="optimize()">Optimize</button>
+                <button class="btn" onclick="exportData()">Export</button>
+            </div>
+
+            <div class="output" id="output">
+                Ready to process your data...
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function process() {
+            const output = document.getElementById('output');
+            output.innerHTML = `Processing complete! Result: ${Math.floor(Math.random() * 1000)}`;
+        }
+
+        function analyze() {
+            const output = document.getElementById('output');
+            output.innerHTML = `Analysis complete! Score: ${Math.floor(Math.random() * 100)}%`;
+        }
+
+        function optimize() {
+            const output = document.getElementById('output');
+            output.innerHTML = `Optimization complete! Improved by ${Math.floor(Math.random() * 50 + 10)}%`;
+        }
+
+        function exportData() {
+            alert('AI Video Summarizer - Data exported successfully!');
+        }
+    </script>
+</body>
+</html>

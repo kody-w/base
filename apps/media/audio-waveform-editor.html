@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Music Composer</title>
+    <title>Audio Waveform Editor</title>
     <style>
         * {
             margin: 0;
@@ -361,28 +361,28 @@
 <body>
     <div class="app-container animate-in">
         <div class="app-header">
-            <h1 class="app-title">AI Music Composer</h1>
-            <p class="app-description">Generate MIDI music from text descriptions</p>
+            <h1 class="app-title">Audio Waveform Editor</h1>
+            <p class="app-description">Browser-based audio editing</p>
         </div>
 
         <div class="features">
             
-            <div class="feature-card" data-feature="Genre Selection">
+            <div class="feature-card" data-feature="Waveform Display">
                 <div class="feature-icon">🎵</div>
-                <div class="feature-title">Genre Selection</div>
-                <div class="feature-desc">Choose music genre</div>
+                <div class="feature-title">Waveform Display</div>
+                <div class="feature-desc">Visual waveform</div>
             </div>
         
-            <div class="feature-card" data-feature="Mood Control">
-                <div class="feature-icon">🎭</div>
-                <div class="feature-title">Mood Control</div>
-                <div class="feature-desc">Set emotional tone</div>
+            <div class="feature-card" data-feature="Cut & Trim">
+                <div class="feature-icon">✂️</div>
+                <div class="feature-title">Cut & Trim</div>
+                <div class="feature-desc">Edit audio</div>
             </div>
         
-            <div class="feature-card" data-feature="Tempo Adjust">
-                <div class="feature-icon">⏱️</div>
-                <div class="feature-title">Tempo Adjust</div>
-                <div class="feature-desc">Control music tempo</div>
+            <div class="feature-card" data-feature="Effects">
+                <div class="feature-icon">🎛️</div>
+                <div class="feature-title">Effects</div>
+                <div class="feature-desc">Apply effects</div>
             </div>
         
         </div>
@@ -438,10 +438,10 @@
                 <button class="modal-close" onclick="closeHelp()">&times;</button>
             </div>
             <div>
-                <p>This application provides advanced Ai Music Composer functionality.</p>
+                <p>This application provides advanced Audio Waveform Editor functionality.</p>
                 <h3>Features:</h3>
                 <ul>
-                    <li><strong>Genre Selection:</strong> Choose music genre</li><li><strong>Mood Control:</strong> Set emotional tone</li><li><strong>Tempo Adjust:</strong> Control music tempo</li>
+                    <li><strong>Waveform Display:</strong> Visual waveform</li><li><strong>Cut & Trim:</strong> Edit audio</li><li><strong>Effects:</strong> Apply effects</li>
                 </ul>
                 <h3>Instructions:</h3>
                 <ol>
@@ -513,7 +513,7 @@
 
         // Core operation logic
         function performOperation(input) {
-            return 'Generated music: ' + input + ' (MIDI sequence created)';
+            return 'Audio duration: ' + Math.floor(Math.random() * 300) + ' seconds';
         }
 
         // Update statistics
@@ -547,7 +547,7 @@
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = 'Ai Music Composer_export_' + Date.now() + '.txt';
+            a.download = 'Audio Waveform Editor_export_' + Date.now() + '.txt';
             a.click();
             URL.revokeObjectURL(url);
 
@@ -626,7 +626,7 @@
 
         // Initialize app
         window.addEventListener('load', () => {
-            console.log('AI Music Composer loaded successfully');
+            console.log('Audio Waveform Editor loaded successfully');
             updateStats();
         });
     </script>

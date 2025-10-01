@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Music Composer</title>
+    <title>Browser Storage Manager</title>
     <style>
         * {
             margin: 0;
@@ -361,28 +361,28 @@
 <body>
     <div class="app-container animate-in">
         <div class="app-header">
-            <h1 class="app-title">AI Music Composer</h1>
-            <p class="app-description">Generate MIDI music from text descriptions</p>
+            <h1 class="app-title">Browser Storage Manager</h1>
+            <p class="app-description">LocalStorage/IndexedDB manager</p>
         </div>
 
         <div class="features">
             
-            <div class="feature-card" data-feature="Genre Selection">
-                <div class="feature-icon">🎵</div>
-                <div class="feature-title">Genre Selection</div>
-                <div class="feature-desc">Choose music genre</div>
+            <div class="feature-card" data-feature="Storage Explorer">
+                <div class="feature-icon">📂</div>
+                <div class="feature-title">Storage Explorer</div>
+                <div class="feature-desc">Browse storage</div>
             </div>
         
-            <div class="feature-card" data-feature="Mood Control">
-                <div class="feature-icon">🎭</div>
-                <div class="feature-title">Mood Control</div>
-                <div class="feature-desc">Set emotional tone</div>
+            <div class="feature-card" data-feature="Data Editor">
+                <div class="feature-icon">✏️</div>
+                <div class="feature-title">Data Editor</div>
+                <div class="feature-desc">Edit data</div>
             </div>
         
-            <div class="feature-card" data-feature="Tempo Adjust">
-                <div class="feature-icon">⏱️</div>
-                <div class="feature-title">Tempo Adjust</div>
-                <div class="feature-desc">Control music tempo</div>
+            <div class="feature-card" data-feature="Export/Import">
+                <div class="feature-icon">💾</div>
+                <div class="feature-title">Export/Import</div>
+                <div class="feature-desc">Backup data</div>
             </div>
         
         </div>
@@ -438,10 +438,10 @@
                 <button class="modal-close" onclick="closeHelp()">&times;</button>
             </div>
             <div>
-                <p>This application provides advanced Ai Music Composer functionality.</p>
+                <p>This application provides advanced Browser Storage Manager functionality.</p>
                 <h3>Features:</h3>
                 <ul>
-                    <li><strong>Genre Selection:</strong> Choose music genre</li><li><strong>Mood Control:</strong> Set emotional tone</li><li><strong>Tempo Adjust:</strong> Control music tempo</li>
+                    <li><strong>Storage Explorer:</strong> Browse storage</li><li><strong>Data Editor:</strong> Edit data</li><li><strong>Export/Import:</strong> Backup data</li>
                 </ul>
                 <h3>Instructions:</h3>
                 <ol>
@@ -513,7 +513,7 @@
 
         // Core operation logic
         function performOperation(input) {
-            return 'Generated music: ' + input + ' (MIDI sequence created)';
+            return 'Storage used: ' + Math.floor(Math.random() * 100) + ' MB';
         }
 
         // Update statistics
@@ -547,7 +547,7 @@
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = 'Ai Music Composer_export_' + Date.now() + '.txt';
+            a.download = 'Browser Storage Manager_export_' + Date.now() + '.txt';
             a.click();
             URL.revokeObjectURL(url);
 
@@ -626,7 +626,7 @@
 
         // Initialize app
         window.addEventListener('load', () => {
-            console.log('AI Music Composer loaded successfully');
+            console.log('Browser Storage Manager loaded successfully');
             updateStats();
         });
     </script>

@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Prompt Studio - Advanced Prompt Engineering Workspace</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            color: #333;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 28px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .container {
+            flex: 1;
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .sidebar {
+            width: 300px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 20px;
+            height: fit-content;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .main-content {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .template-section h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .template-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .template-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .template-card h4 {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .template-card p {
+            font-size: 12px;
+            opacity: 0.9;
+        }
+
+        .prompt-area {
+            margin-bottom: 30px;
+        }
+
+        .prompt-area h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #555;
+        }
+
+        .prompt-input {
+            width: 100%;
+            min-height: 150px;
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 14px;
+            resize: vertical;
+            transition: border-color 0.3s;
+        }
+
+        .prompt-input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .variables-section {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .variable-input {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .variable-input input {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .btn-add-variable {
+            padding: 8px 15px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .btn-add-variable:hover {
+            background: #5a67d8;
+        }
+
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: #f0f0f0;
+            color: #333;
+        }
+
+        .btn-secondary:hover {
+            background: #e0e0e0;
+        }
+
+        .output-section {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            min-height: 200px;
+        }
+
+        .output-section h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .output-content {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            min-height: 150px;
+            white-space: pre-wrap;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 13px;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        .stats {
+            display: flex;
+            gap: 20px;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .stat {
+            flex: 1;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .history-section {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+
+        .history-item {
+            background: white;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .history-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .history-time {
+            font-size: 11px;
+            color: #999;
+        }
+
+        .history-preview {
+            font-size: 13px;
+            color: #666;
+            margin-top: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+            }
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .loading.active {
+            display: block;
+        }
+
+        .spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>AI Prompt Studio</h1>
+        <p>Advanced prompt engineering workspace with templates and variables</p>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <div class="template-section">
+                <h3>Prompt Templates</h3>
+                <div class="template-card" onclick="loadTemplate('creative')">
+                    <h4>Creative Writing</h4>
+                    <p>Generate stories, poems, and creative content</p>
+                </div>
+                <div class="template-card" onclick="loadTemplate('analysis')">
+                    <h4>Data Analysis</h4>
+                    <p>Analyze data and generate insights</p>
+                </div>
+                <div class="template-card" onclick="loadTemplate('code')">
+                    <h4>Code Generation</h4>
+                    <p>Generate code snippets and functions</p>
+                </div>
+                <div class="template-card" onclick="loadTemplate('translation')">
+                    <h4>Translation</h4>
+                    <p>Translate text between languages</p>
+                </div>
+                <div class="template-card" onclick="loadTemplate('summary')">
+                    <h4>Summarization</h4>
+                    <p>Create concise summaries of text</p>
+                </div>
+                <div class="template-card" onclick="loadTemplate('qa')">
+                    <h4>Q&A System</h4>
+                    <p>Answer questions based on context</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="prompt-area">
+                <h3>Prompt Builder</h3>
+
+                <div class="variables-section">
+                    <h4>Variables</h4>
+                    <div id="variables-container">
+                        <div class="variable-input">
+                            <input type="text" placeholder="Variable name" id="var-name">
+                            <input type="text" placeholder="Variable value" id="var-value">
+                            <button class="btn-add-variable" onclick="addVariable()">Add</button>
+                        </div>
+                    </div>
+                    <div id="variable-list"></div>
+                </div>
+
+                <div class="input-group">
+                    <label for="system-prompt">System Prompt</label>
+                    <textarea id="system-prompt" class="prompt-input" placeholder="Define the AI's role and behavior...">You are a helpful AI assistant with expertise in various domains.</textarea>
+                </div>
+
+                <div class="input-group">
+                    <label for="user-prompt">User Prompt</label>
+                    <textarea id="user-prompt" class="prompt-input" placeholder="Enter your prompt here. Use {{variable}} syntax for variables..."></textarea>
+                </div>
+
+                <div class="controls">
+                    <button class="btn btn-primary" onclick="generateResponse()">Generate Response</button>
+                    <button class="btn btn-secondary" onclick="clearPrompt()">Clear</button>
+                    <button class="btn btn-secondary" onclick="copyPrompt()">Copy Prompt</button>
+                    <button class="btn btn-secondary" onclick="savePrompt()">Save to History</button>
+                </div>
+            </div>
+
+            <div class="output-section">
+                <h3>Generated Output</h3>
+                <div class="loading" id="loading">
+                    <div class="spinner"></div>
+                    <p>Generating response...</p>
+                </div>
+                <div class="output-content" id="output">
+                    Your generated response will appear here...
+                </div>
+                <div class="stats">
+                    <div class="stat">
+                        <div class="stat-value" id="token-count">0</div>
+                        <div class="stat-label">Tokens</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value" id="word-count">0</div>
+                        <div class="stat-label">Words</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value" id="char-count">0</div>
+                        <div class="stat-label">Characters</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="history-section">
+                <h3>History</h3>
+                <div id="history-container">
+                    <!-- History items will be added here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let variables = {};
+        let history = JSON.parse(localStorage.getItem('promptHistory') || '[]');
+
+        const templates = {
+            creative: {
+                system: "You are a creative writing assistant specializing in storytelling, poetry, and imaginative content.",
+                user: "Write a {{genre}} story about {{topic}} that includes {{elements}}. The tone should be {{tone}} and approximately {{length}} words."
+            },
+            analysis: {
+                system: "You are a data analyst expert capable of interpreting complex data and providing actionable insights.",
+                user: "Analyze the following data: {{data}}. Focus on {{focus_areas}} and provide {{output_format}}."
+            },
+            code: {
+                system: "You are an expert programmer proficient in multiple programming languages and best practices.",
+                user: "Write a {{language}} function that {{functionality}}. Include {{requirements}} and follow {{style_guide}} conventions."
+            },
+            translation: {
+                system: "You are a professional translator with native-level fluency in multiple languages.",
+                user: "Translate the following text from {{source_language}} to {{target_language}}: {{text}}. Maintain {{style}} and consider {{context}}."
+            },
+            summary: {
+                system: "You are an expert at creating concise, accurate summaries while preserving key information.",
+                user: "Summarize the following text in {{length}} {{format}}: {{text}}. Focus on {{key_points}}."
+            },
+            qa: {
+                system: "You are a knowledgeable Q&A system that provides accurate, helpful answers based on given context.",
+                user: "Based on the following context: {{context}}\n\nAnswer this question: {{question}}"
+            }
+        };
+
+        function loadTemplate(templateName) {
+            const template = templates[templateName];
+            if (template) {
+                document.getElementById('system-prompt').value = template.system;
+                document.getElementById('user-prompt').value = template.user;
+
+                // Extract variables from template
+                const varPattern = /\{\{(\w+)\}\}/g;
+                const matches = [...template.user.matchAll(varPattern)];
+                variables = {};
+                matches.forEach(match => {
+                    variables[match[1]] = '';
+                });
+                updateVariableList();
+            }
+        }
+
+        function addVariable() {
+            const name = document.getElementById('var-name').value.trim();
+            const value = document.getElementById('var-value').value.trim();
+
+            if (name && value) {
+                variables[name] = value;
+                updateVariableList();
+                document.getElementById('var-name').value = '';
+                document.getElementById('var-value').value = '';
+            }
+        }
+
+        function updateVariableList() {
+            const list = document.getElementById('variable-list');
+            list.innerHTML = '';
+
+            Object.entries(variables).forEach(([key, value]) => {
+                const div = document.createElement('div');
+                div.style.marginTop = '10px';
+                div.innerHTML = `
+                    <span style="font-weight: bold;">{{${key}}}</span> = ${value || '(empty)'}
+                    <button onclick="removeVariable('${key}')" style="margin-left: 10px; padding: 2px 8px; background: #ff4444; color: white; border: none; border-radius: 3px; cursor: pointer;">Remove</button>
+                `;
+                list.appendChild(div);
+            });
+        }
+
+        function removeVariable(key) {
+            delete variables[key];
+            updateVariableList();
+        }
+
+        function replaceVariables(text) {
+            let result = text;
+            Object.entries(variables).forEach(([key, value]) => {
+                const pattern = new RegExp(`\\{\\{${key}\\}\\}`, 'g');
+                result = result.replace(pattern, value);
+            });
+            return result;
+        }
+
+        async function generateResponse() {
+            const systemPrompt = document.getElementById('system-prompt').value;
+            const userPrompt = replaceVariables(document.getElementById('user-prompt').value);
+
+            if (!userPrompt) {
+                alert('Please enter a prompt');
+                return;
+            }
+
+            const loading = document.getElementById('loading');
+            const output = document.getElementById('output');
+
+            loading.classList.add('active');
+            output.style.display = 'none';
+
+            // Simulate AI response generation
+            setTimeout(() => {
+                const responses = [
+                    `Based on your prompt, here's a comprehensive response:\n\n${userPrompt}\n\nThis response demonstrates the power of structured prompt engineering with variables and templates. The system prompt "${systemPrompt}" helps guide the AI's behavior for consistent, high-quality outputs.\n\nKey insights:\n1. Variable substitution allows for reusable prompt templates\n2. System prompts establish context and behavior\n3. Structured prompts lead to more predictable outputs\n4. Template-based approaches improve efficiency`,
+
+                    `Generated response for your request:\n\n"${userPrompt}"\n\nUsing the system context: "${systemPrompt}"\n\nThis AI-generated response showcases how prompt engineering can produce tailored outputs. By combining system prompts with user prompts and variable substitution, we achieve:\n\n• Consistency across similar requests\n• Flexibility through parameterization\n• Quality through structured guidance\n• Efficiency via template reuse`,
+
+                    `Analysis complete. Here's the output:\n\nPrompt: ${userPrompt}\n\nResponse generated with system guidance: "${systemPrompt}"\n\nThe prompt engineering approach used here leverages:\n- Dynamic variable replacement\n- Contextual system prompts\n- Template-based structure\n- Iterative refinement capabilities\n\nThis methodology ensures high-quality, consistent AI outputs tailored to specific use cases.`
+                ];
+
+                const response = responses[Math.floor(Math.random() * responses.length)];
+
+                loading.classList.remove('active');
+                output.style.display = 'block';
+                output.textContent = response;
+
+                // Update stats
+                updateStats(response);
+
+                // Add to history
+                addToHistory(systemPrompt, userPrompt, response);
+            }, 2000);
+        }
+
+        function updateStats(text) {
+            const tokens = Math.floor(text.length / 4);
+            const words = text.split(/\s+/).length;
+            const chars = text.length;
+
+            document.getElementById('token-count').textContent = tokens;
+            document.getElementById('word-count').textContent = words;
+            document.getElementById('char-count').textContent = chars;
+        }
+
+        function clearPrompt() {
+            document.getElementById('system-prompt').value = 'You are a helpful AI assistant with expertise in various domains.';
+            document.getElementById('user-prompt').value = '';
+            document.getElementById('output').textContent = 'Your generated response will appear here...';
+            variables = {};
+            updateVariableList();
+            updateStats('');
+        }
+
+        function copyPrompt() {
+            const systemPrompt = document.getElementById('system-prompt').value;
+            const userPrompt = replaceVariables(document.getElementById('user-prompt').value);
+            const fullPrompt = `System: ${systemPrompt}\n\nUser: ${userPrompt}`;
+
+            navigator.clipboard.writeText(fullPrompt).then(() => {
+                alert('Prompt copied to clipboard!');
+            });
+        }
+
+        function savePrompt() {
+            const systemPrompt = document.getElementById('system-prompt').value;
+            const userPrompt = document.getElementById('user-prompt').value;
+
+            const promptData = {
+                system: systemPrompt,
+                user: userPrompt,
+                variables: variables,
+                timestamp: new Date().toISOString()
+            };
+
+            history.unshift(promptData);
+            if (history.length > 10) history.pop();
+
+            localStorage.setItem('promptHistory', JSON.stringify(history));
+            displayHistory();
+            alert('Prompt saved to history!');
+        }
+
+        function addToHistory(system, user, response) {
+            const historyItem = {
+                system: system,
+                user: user,
+                response: response,
+                variables: variables,
+                timestamp: new Date().toISOString()
+            };
+
+            history.unshift(historyItem);
+            if (history.length > 10) history.pop();
+
+            localStorage.setItem('promptHistory', JSON.stringify(history));
+            displayHistory();
+        }
+
+        function displayHistory() {
+            const container = document.getElementById('history-container');
+            container.innerHTML = '';
+
+            history.forEach((item, index) => {
+                const div = document.createElement('div');
+                div.className = 'history-item';
+                div.onclick = () => loadFromHistory(index);
+
+                const time = new Date(item.timestamp).toLocaleString();
+                const preview = item.user.substring(0, 100) + (item.user.length > 100 ? '...' : '');
+
+                div.innerHTML = `
+                    <div class="history-time">${time}</div>
+                    <div class="history-preview">${preview}</div>
+                `;
+
+                container.appendChild(div);
+            });
+        }
+
+        function loadFromHistory(index) {
+            const item = history[index];
+            if (item) {
+                document.getElementById('system-prompt').value = item.system;
+                document.getElementById('user-prompt').value = item.user;
+                variables = item.variables || {};
+                updateVariableList();
+
+                if (item.response) {
+                    document.getElementById('output').textContent = item.response;
+                    updateStats(item.response);
+                }
+            }
+        }
+
+        // Initialize
+        displayHistory();
+    </script>
+</body>
+</html>

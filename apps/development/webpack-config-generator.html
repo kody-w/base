@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Music Composer</title>
+    <title>Webpack Config Generator</title>
     <style>
         * {
             margin: 0;
@@ -361,28 +361,28 @@
 <body>
     <div class="app-container animate-in">
         <div class="app-header">
-            <h1 class="app-title">AI Music Composer</h1>
-            <p class="app-description">Generate MIDI music from text descriptions</p>
+            <h1 class="app-title">Webpack Config Generator</h1>
+            <p class="app-description">Interactive webpack configuration</p>
         </div>
 
         <div class="features">
             
-            <div class="feature-card" data-feature="Genre Selection">
-                <div class="feature-icon">🎵</div>
-                <div class="feature-title">Genre Selection</div>
-                <div class="feature-desc">Choose music genre</div>
+            <div class="feature-card" data-feature="Module Rules">
+                <div class="feature-icon">📦</div>
+                <div class="feature-title">Module Rules</div>
+                <div class="feature-desc">Configure loaders</div>
             </div>
         
-            <div class="feature-card" data-feature="Mood Control">
-                <div class="feature-icon">🎭</div>
-                <div class="feature-title">Mood Control</div>
-                <div class="feature-desc">Set emotional tone</div>
+            <div class="feature-card" data-feature="Plugin Setup">
+                <div class="feature-icon">🔌</div>
+                <div class="feature-title">Plugin Setup</div>
+                <div class="feature-desc">Add plugins</div>
             </div>
         
-            <div class="feature-card" data-feature="Tempo Adjust">
-                <div class="feature-icon">⏱️</div>
-                <div class="feature-title">Tempo Adjust</div>
-                <div class="feature-desc">Control music tempo</div>
+            <div class="feature-card" data-feature="Optimization">
+                <div class="feature-icon">⚡</div>
+                <div class="feature-title">Optimization</div>
+                <div class="feature-desc">Optimize bundles</div>
             </div>
         
         </div>
@@ -438,10 +438,10 @@
                 <button class="modal-close" onclick="closeHelp()">&times;</button>
             </div>
             <div>
-                <p>This application provides advanced Ai Music Composer functionality.</p>
+                <p>This application provides advanced Webpack Config Generator functionality.</p>
                 <h3>Features:</h3>
                 <ul>
-                    <li><strong>Genre Selection:</strong> Choose music genre</li><li><strong>Mood Control:</strong> Set emotional tone</li><li><strong>Tempo Adjust:</strong> Control music tempo</li>
+                    <li><strong>Module Rules:</strong> Configure loaders</li><li><strong>Plugin Setup:</strong> Add plugins</li><li><strong>Optimization:</strong> Optimize bundles</li>
                 </ul>
                 <h3>Instructions:</h3>
                 <ol>
@@ -513,7 +513,7 @@
 
         // Core operation logic
         function performOperation(input) {
-            return 'Generated music: ' + input + ' (MIDI sequence created)';
+            return 'Webpack config generated with ' + Math.floor(Math.random() * 15) + ' plugins';
         }
 
         // Update statistics
@@ -547,7 +547,7 @@
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = 'Ai Music Composer_export_' + Date.now() + '.txt';
+            a.download = 'Webpack Config Generator_export_' + Date.now() + '.txt';
             a.click();
             URL.revokeObjectURL(url);
 
@@ -626,7 +626,7 @@
 
         // Initialize app
         window.addEventListener('load', () => {
-            console.log('AI Music Composer loaded successfully');
+            console.log('Webpack Config Generator loaded successfully');
             updateStats();
         });
     </script>
