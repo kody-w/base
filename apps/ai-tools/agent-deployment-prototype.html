@@ -1039,11 +1039,16 @@
                         return;
                     }
 
-                    // Try to get the list of files in the agents directory
-                    const response = await fetch(`https://api.github.com/repos/${this.GITHUB_OWNER}/${this.GITHUB_REPO}/contents/agents`);
-                    
+                    // Static Data Covenant: read the CI-harvested directory listing
+                    // snapshot from this Pages origin instead of calling api.github.com
+                    // from the visitor browser. NOTE: as of this migration, the source
+                    // repo (kody-w/AI-Agent-Library) returns 404 from the GitHub API, so
+                    // the harvested snapshot is empty and this falls through to mock data
+                    // — see scripts/harvest-deployment-agents.mjs.
+                    const response = await fetch('data/deployment-agents-listing.json');
+
                     if (!response.ok) {
-                        console.log(`GitHub API returned ${response.status}. Using mock data.`);
+                        console.log(`Agents snapshot fetch returned ${response.status}. Using mock data.`);
                         this.loadMockAgents();
                         return;
                     }

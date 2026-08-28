@@ -1275,12 +1275,14 @@
                     }
                 }
                 
-                const apiUrl = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/git/trees/${BRANCH}?recursive=1`;
-                
+                // Static Data Covenant: read the CI-harvested tree snapshot from this
+                // Pages origin instead of calling api.github.com from the visitor browser.
+                const apiUrl = 'data/api/tree.json';
+
                 const response = await fetch(apiUrl);
-                
+
                 if (!response.ok) {
-                    throw new Error(`GitHub API error: ${response.status}`);
+                    throw new Error(`Tree snapshot fetch error: ${response.status}`);
                 }
                 
                 const data = await response.json();

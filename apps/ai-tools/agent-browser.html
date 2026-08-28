@@ -530,12 +530,16 @@
             try {
                 showLoading(true);
                 
-                // Fetch the list of files from GitHub API
-                const apiUrl = `https://api.github.com/repos/${GITHUB_REPO}/contents/${AGENTS_PATH}?ref=${BRANCH}`;
+                // Static Data Covenant: read the CI-harvested directory listing snapshot
+                // from this Pages origin instead of calling api.github.com from the
+                // visitor browser. NOTE: as of this migration, the source repo
+                // (kody-w/Copilot-Agent-365) returns 404 from the GitHub API, so the
+                // harvested snapshot is empty — see scripts/harvest-agents.mjs.
+                const apiUrl = 'data/agents-listing.json';
                 const response = await fetch(apiUrl);
-                
+
                 if (!response.ok) {
-                    throw new Error(`GitHub API returned ${response.status}`);
+                    throw new Error(`Agents snapshot fetch returned ${response.status}`);
                 }
                 
                 const files = await response.json();
@@ -687,13 +691,15 @@
                     }
                     agentCode[agent.name] = await response.text();
                     
-                    // Also fetch commit info for last updated date
+                    // Static Data Covenant: read commit-date metadata from the
+                    // CI-harvested snapshot (keyed by file path) instead of calling
+                    // api.github.com from the visitor browser.
                     try {
-                        const commitsUrl = `https://api.github.com/repos/${GITHUB_REPO}/commits?path=${agent.path}&per_page=1`;
-                        const commitsResponse = await fetch(commitsUrl);
+                        const commitsResponse = await fetch('data/agents-commits.json');
                         if (commitsResponse.ok) {
-                            const commits = await commitsResponse.json();
-                            if (commits.length > 0) {
+                            const commitsByPath = await commitsResponse.json();
+                            const commits = commitsByPath[agent.path];
+                            if (commits && commits.length > 0) {
                                 const date = new Date(commits[0].commit.author.date);
                                 document.getElementById('metaLastUpdated').textContent = date.toLocaleDateString();
                             }

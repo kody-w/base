@@ -1,0 +1,36 @@
+name: Harvest gallery tree snapshot
+
+# Static Data Covenant (kody-w/RAR CONSTITUTION.md Article XXIV): the app
+# gallery in index.html reads data/api/tree.json from this Pages origin
+# instead of calling api.github.com from the visitor's browser. This
+# workflow keeps that snapshot fresh whenever content changes, and on a
+# schedule so newly added apps show up without a manual push.
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '17 5 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Harvest tree snapshot
+        run: python3 scripts/harvest_tree.py
+
+      - name: Commit snapshot if changed
+        run: |
+          git config user.name "base Pages Bot"
+          git config user.email "base-pages-bot@users.noreply.github.com"
+          git add data/api/tree.json
+          git diff --cached --quiet || git commit -m "chore: refresh gallery tree snapshot"
+          git push
