@@ -1,1475 +1,1581 @@
 {
-  "sha": "6eacdf2a90366b889536285a62f6b93c0c807aac",
-  "url": "https://api.github.com/repos/kody-w/base/git/trees/6eacdf2a90366b889536285a62f6b93c0c807aac",
-  "tree": [
-    {
-      "path": ".claude",
-      "mode": "040000",
-      "type": "tree",
-      "sha": "403a4e0eeb1ff898f291f47fae677ef1f9f2bfe8",
-      "url": "https://api.github.com/repos/kody-w/base/git/trees/403a4e0eeb1ff898f291f47fae677ef1f9f2bfe8"
-    },
-    {
-      "path": ".claude/agents",
-      "mode": "040000",
-      "type": "tree",
-      "sha": "d2f5f80b14dab2693a5ecf46045025e39bc7e3a2",
-      "url": "https://api.github.com/repos/kody-w/base/git/trees/d2f5f80b14dab2693a5ecf46045025e39bc7e3a2"
-    },
-    {
-      "path": ".claude/agents/github-pages-validator.md",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "d626dff0bac85783eae9ab003064aca754f59bf2",
-      "size": 5468,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/d626dff0bac85783eae9ab003064aca754f59bf2"
-    },
-    {
-      "path": ".claude/agents/link-validator.md",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "4b26ed6bbc5e7055dcf8900090b369c01d669f2b",
-      "size": 4620,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/4b26ed6bbc5e7055dcf8900090b369c01d669f2b"
-    },
-    {
-      "path": ".claude/agents/repo-steward.md",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "0120fd088913c94588dd1876ed2d37ffaacae431",
-      "size": 7307,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/0120fd088913c94588dd1876ed2d37ffaacae431"
-    },
-    {
-      "path": ".claude/agents/steward-innovator.md",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "518e07ca8bfeb5a33205f063d973cd5b3e3c1392",
-      "size": 3992,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/518e07ca8bfeb5a33205f063d973cd5b3e3c1392"
-    },
-    {
-      "path": ".claude/agents/steward-orchestrator.md",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "432161bccebd889a3c16a8f32fa5d5d8d2cb9439",
-      "size": 5636,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/432161bccebd889a3c16a8f32fa5d5d8d2cb9439"
-    },
-    {
-      "path": ".claude/agents/web-file-generator.md",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "e1f62eedf359ebfd8bdb84160d52beb362b31904",
-      "size": 4577,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/e1f62eedf359ebfd8bdb84160d52beb362b31904"
-    },
-    {
-      "path": ".gitignore",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "fe54cb60f8c67eac67f19ee9189a187cce9d55c6",
-      "size": 420,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/fe54cb60f8c67eac67f19ee9189a187cce9d55c6"
-    },
-    {
-      "path": ".nojekyll",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
-      "size": 0,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
-    },
-    {
-      "path": "CLAUDE.md",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "1f74ab9ed6c9e81301ff12bd44fabf982335e44c",
-      "size": 5442,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/1f74ab9ed6c9e81301ff12bd44fabf982335e44c"
-    },
-    {
-      "path": "README.md",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "cff816eb5513c8c816b01a6c942fa4756c44cb31",
-      "size": 12,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/cff816eb5513c8c816b01a6c942fa4756c44cb31"
-    },
-    {
-      "path": "apps",
-      "mode": "040000",
-      "type": "tree",
-      "sha": "2483c7a5b423b75174f4e05ecbc45fc51fc5ee37",
-      "url": "https://api.github.com/repos/kody-w/base/git/trees/2483c7a5b423b75174f4e05ecbc45fc51fc5ee37"
-    },
-    {
-      "path": "apps/ai-tools",
-      "mode": "040000",
-      "type": "tree",
-      "sha": "d5446d8779993e979492a63411b6e5adb6423ef8",
-      "url": "https://api.github.com/repos/kody-w/base/git/trees/d5446d8779993e979492a63411b6e5adb6423ef8"
-    },
-    {
-      "path": "apps/ai-tools/Copilot_Companion.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "5fa1eb66b62fe00181f9fbe54b071763ff962fce",
-      "size": 245836,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/5fa1eb66b62fe00181f9fbe54b071763ff962fce"
-    },
-    {
-      "path": "apps/ai-tools/agent-browser.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "5533dcbc19a14ed7c0a40e41ca1382369579c1b1",
-      "size": 28668,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/5533dcbc19a14ed7c0a40e41ca1382369579c1b1"
-    },
-    {
-      "path": "apps/ai-tools/agent-deployment-prototype.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "02dd41a236a5105e561443a3565701ede73c2f3c",
-      "size": 101571,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/02dd41a236a5105e561443a3565701ede73c2f3c"
-    },
-    {
-      "path": "apps/ai-tools/ai-color-palette.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "1267c86b0c849a53fa00af047ae6497ac374bbf5",
-      "size": 18845,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/1267c86b0c849a53fa00af047ae6497ac374bbf5"
-    },
-    {
-      "path": "apps/ai-tools/ai-content-generator.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "48fec327b655a34c6c64e573b8e1e7a9fcff180d",
-      "size": 5000,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/48fec327b655a34c6c64e573b8e1e7a9fcff180d"
-    },
-    {
-      "path": "apps/ai-tools/ai-data-visualizer.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "dad68c904fd2b6bf34e413ea28a810edfb5d8c3b",
-      "size": 18813,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/dad68c904fd2b6bf34e413ea28a810edfb5d8c3b"
-    },
-    {
-      "path": "apps/ai-tools/ai-document-analyzer.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "68434d5b14dc4d4382af9956f02fbefbc95edecf",
-      "size": 4990,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/68434d5b14dc4d4382af9956f02fbefbc95edecf"
-    },
-    {
-      "path": "apps/ai-tools/ai-image-enhancer.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "b93db24c0762c6a4f6f28bf54b9c18af54c19107",
-      "size": 18796,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/b93db24c0762c6a4f6f28bf54b9c18af54c19107"
-    },
-    {
-      "path": "apps/ai-tools/ai-language-tutor.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "deedf89995389a7f51d99354d3475f92cf2da120",
-      "size": 18762,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/deedf89995389a7f51d99354d3475f92cf2da120"
-    },
-    {
-      "path": "apps/ai-tools/ai-music-composer.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "a5c2803b491c56706be772e87d2531a8f411cd07",
-      "size": 18797,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/a5c2803b491c56706be772e87d2531a8f411cd07"
-    },
-    {
-      "path": "apps/ai-tools/ai-prompt-studio.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "95aed19d170724fea1a10ed39f20d0e64a3446c5",
-      "size": 23169,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/95aed19d170724fea1a10ed39f20d0e64a3446c5"
-    },
-    {
-      "path": "apps/ai-tools/ai-resume-builder.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "413fa45da439ddfbaa20733d4a0a758bcc741c8c",
-      "size": 18905,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/413fa45da439ddfbaa20733d4a0a758bcc741c8c"
-    },
-    {
-      "path": "apps/ai-tools/ai-simulation-sales-demo.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "1f2b4e78784fb938ca4f96abf53df2fafc577d24",
-      "size": 54013,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/1f2b4e78784fb938ca4f96abf53df2fafc577d24"
-    },
-    {
-      "path": "apps/ai-tools/ai-translation-hub.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "ccfd2314e6b7a6019c904f7844fe2e2c4db56660",
-      "size": 4993,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/ccfd2314e6b7a6019c904f7844fe2e2c4db56660"
-    },
-    {
-      "path": "apps/ai-tools/ai-video-summarizer.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "fdb4b0509306347c8f230f146e7bcaf992beb92b",
-      "size": 4991,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/fdb4b0509306347c8f230f146e7bcaf992beb92b"
-    },
-    {
-      "path": "apps/ai-tools/apl2ai-watch-app.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "43c9ea4c82644c0a21fef9543ae63bd57b638e66",
-      "size": 35997,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/43c9ea4c82644c0a21fef9543ae63bd57b638e66"
-    },
-    {
-      "path": "apps/ai-tools/aplAI.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "cb9c5b452b6f56af26508e28931664ad13e38086",
-      "size": 45352,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/cb9c5b452b6f56af26508e28931664ad13e38086"
-    },
-    {
-      "path": "apps/ai-tools/aplai-direct-app.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "947003c44fb6bbe500fc864d05d19c6466a31f04",
-      "size": 59938,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/947003c44fb6bbe500fc864d05d19c6466a31f04"
-    },
-    {
-      "path": "apps/ai-tools/aplai-unified-app.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "98a5dda811ebb9a0c4883375f483d26ffed0cd5e",
-      "size": 60888,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/98a5dda811ebb9a0c4883375f483d26ffed0cd5e"
-    },
-    {
-      "path": "apps/ai-tools/aplai-watch-app.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "eba1e6ce80ca008c88fdf8460f08709c028af047",
-      "size": 35343,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/eba1e6ce80ca008c88fdf8460f08709c028af047"
-    },
-    {
-      "path": "apps/ai-tools/artifact-converter.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "dcce11aac965af37cc89daefc92ba236c98bb2ab",
-      "size": 43180,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/dcce11aac965af37cc89daefc92ba236c98bb2ab"
-    },
-    {
-      "path": "apps/ai-tools/chat-persona-designer.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "c0db92b22fe7c5755f17c3f8d337459ccb60b743",
-      "size": 18859,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/c0db92b22fe7c5755f17c3f8d337459ccb60b743"
-    },
-    {
-      "path": "apps/ai-tools/claude-subagents-tutorial-continued.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "fc5a8a78ae2f6707604be2a3d055d815751d4200",
-      "size": 49199,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/fc5a8a78ae2f6707604be2a3d055d815751d4200"
-    },
-    {
-      "path": "apps/ai-tools/claude-subagents-tutorial.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "81a0e891fa777d00c3e9010efeb130028f723667",
-      "size": 62153,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/81a0e891fa777d00c3e9010efeb130028f723667"
-    },
-    {
-      "path": "apps/ai-tools/code-explainer-ai.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "cf061ce32439a55b88e3db1201e7d50d368f32ba",
-      "size": 18877,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/cf061ce32439a55b88e3db1201e7d50d368f32ba"
-    },
-    {
-      "path": "apps/ai-tools/complete-voice-assistant.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "f6877f76e95cb8a0922d9d5c6040fbb8bb3d4357",
-      "size": 49213,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/f6877f76e95cb8a0922d9d5c6040fbb8bb3d4357"
-    },
-    {
-      "path": "apps/ai-tools/consolidated-ai-tools.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "61883804b8db55867284df2c240e43ddd46b9702",
-      "size": 59875,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/61883804b8db55867284df2c240e43ddd46b9702"
-    },
-    {
-      "path": "apps/ai-tools/copilot-agent-store.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "ad4e9654248e69a821659431ef4a821ca11509ff",
-      "size": 39844,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/ad4e9654248e69a821659431ef4a821ca11509ff"
-    },
-    {
-      "path": "apps/ai-tools/face-mesh-editor.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "ec7b8a9f2b80e7a1df86b3553f62314073268df3",
-      "size": 18746,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/ec7b8a9f2b80e7a1df86b3553f62314073268df3"
-    },
-    {
-      "path": "apps/ai-tools/neural-style-transfer.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "245192f7e6f345e2c1815384d9383e059ec0805a",
-      "size": 22472,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/245192f7e6f345e2c1815384d9383e059ec0805a"
-    },
-    {
-      "path": "apps/ai-tools/sentiment-analyzer.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "e9ebc93499f3b32d5a8614dd12de08263f272c27",
-      "size": 18974,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/e9ebc93499f3b32d5a8614dd12de08263f272c27"
-    },
-    {
-      "path": "apps/ai-tools/smart-form-builder.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "f71dc78441b2d87332c220c974267e43fbc339be",
-      "size": 18818,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/f71dc78441b2d87332c220c974267e43fbc339be"
-    },
-    {
-      "path": "apps/business",
-      "mode": "040000",
-      "type": "tree",
-      "sha": "69d9dd18fbd97c8150af298dca9f5d798e292382",
-      "url": "https://api.github.com/repos/kody-w/base/git/trees/69d9dd18fbd97c8150af298dca9f5d798e292382"
-    },
-    {
-      "path": "apps/business/business-model-canvas.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "b373753fa2a0b69612c664dbdbc3b10d14396f2c",
-      "size": 18727,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/b373753fa2a0b69612c664dbdbc3b10d14396f2c"
-    },
-    {
-      "path": "apps/business/competitor-analysis-matrix.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "a0db97237845977da30376c09d43feb93b21bb6d",
-      "size": 18840,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/a0db97237845977da30376c09d43feb93b21bb6d"
-    },
-    {
-      "path": "apps/business/customer-journey-mapper.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "21c95240e681a41e1748aacec4175ae67181f4d9",
-      "size": 18799,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/21c95240e681a41e1748aacec4175ae67181f4d9"
-    },
-    {
-      "path": "apps/business/dynamics365-email-automation.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "ccf4b8a1551e71c2b2e0e1312f8f3c9836153dda",
-      "size": 36973,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/ccf4b8a1551e71c2b2e0e1312f8f3c9836153dda"
-    },
-    {
-      "path": "apps/business/financial-dashboard.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "55cb72ea6e81e5e9af51f1eed9f3922622672809",
-      "size": 18745,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/55cb72ea6e81e5e9af51f1eed9f3922622672809"
-    },
-    {
-      "path": "apps/business/hormozi_demo_complete.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "20e4293fd1f42747c9ea4e8d7e0b3c9bb8109959",
-      "size": 44132,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/20e4293fd1f42747c9ea4e8d7e0b3c9bb8109959"
-    },
-    {
-      "path": "apps/business/influence-mastery-app.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "1bd752ff81540a968605fa7d573b8bc2eb660f1b",
-      "size": 50063,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/1bd752ff81540a968605fa7d573b8bc2eb660f1b"
-    },
-    {
-      "path": "apps/business/invoice-generator-pro.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "aad85c945eade75e4271ee9f4bc579041c759fd6",
-      "size": 18809,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/aad85c945eade75e4271ee9f4bc579041c759fd6"
-    },
-    {
-      "path": "apps/business/market-size-calculator.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "f99e4dd23c58e076ad57494cc2451cfb40618e19",
-      "size": 18807,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/f99e4dd23c58e076ad57494cc2451cfb40618e19"
-    },
-    {
-      "path": "apps/business/pitch-deck-builder.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "34336bfdc83a8f2ed4f303fc9c438855943d5e7f",
-      "size": 18797,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/34336bfdc83a8f2ed4f303fc9c438855943d5e7f"
-    },
-    {
-      "path": "apps/business/roi-calculator-suite.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "861e87ec2bc01c35c2ca0b6f5ca660d1b7692511",
-      "size": 18758,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/861e87ec2bc01c35c2ca0b6f5ca660d1b7692511"
-    },
-    {
-      "path": "apps/business/sales-pipeline-tracker.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "b929171048949dfe310d0717a94051fc6752eb33",
-      "size": 18799,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/b929171048949dfe310d0717a94051fc6752eb33"
-    },
-    {
-      "path": "apps/business/swot-analysis-tool.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "02639e62f7b47b15f03ead6233dbe8a7660fe4b0",
-      "size": 18789,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/02639e62f7b47b15f03ead6233dbe8a7660fe4b0"
-    },
-    {
-      "path": "apps/development",
-      "mode": "040000",
-      "type": "tree",
-      "sha": "ff79d4bd7dd537e4eecd90784153a869f4d69d40",
-      "url": "https://api.github.com/repos/kody-w/base/git/trees/ff79d4bd7dd537e4eecd90784153a869f4d69d40"
-    },
-    {
-      "path": "apps/development/azure-vm-hackernews-backup.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "7a93be3555d2bd3fa47af403e205529f7d488d07",
-      "size": 55169,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/7a93be3555d2bd3fa47af403e205529f7d488d07"
-    },
-    {
-      "path": "apps/development/azure-vm-hackernews.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "eb9406c0a06f0c2e9907dc253cb817e4786a804d",
-      "size": 32967,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/eb9406c0a06f0c2e9907dc253cb817e4786a804d"
-    },
-    {
-      "path": "apps/development/browser-vm-app.html",
-      "mode": "100755",
-      "type": "blob",
-      "sha": "46ee054087862678e2e927e5b3b41901c5b9193f",
-      "size": 45404,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/46ee054087862678e2e927e5b3b41901c5b9193f"
-    },
-    {
-      "path": "apps/development/browser-vm-azure-function.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "54cd036f4c801eb76234a10b2c8c37de006bdfc9",
-      "size": 35308,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/54cd036f4c801eb76234a10b2c8c37de006bdfc9"
-    },
-    {
-      "path": "apps/development/browser-vm-docker.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "533dd41e3492fe7f35260ac9a22e0e859250f487",
-      "size": 46960,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/533dd41e3492fe7f35260ac9a22e0e859250f487"
-    },
-    {
-      "path": "apps/development/cdn-file-manager.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "80bbf244ba9c56d58195d7ee348be34c3b04f9e3",
-      "size": 26654,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/80bbf244ba9c56d58195d7ee348be34c3b04f9e3"
-    },
-    {
-      "path": "apps/development/code-snippet-manager.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "6bd327a17364e7a54e2155bb2b72e825791a4ab9",
-      "size": 18771,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/6bd327a17364e7a54e2155bb2b72e825791a4ab9"
-    },
-    {
-      "path": "apps/development/css-grid-generator.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "5d1f7e1dbcf250c1be3f9bf0f501f40ffbfd63f4",
-      "size": 18790,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/5d1f7e1dbcf250c1be3f9bf0f501f40ffbfd63f4"
-    },
-    {
-      "path": "apps/development/database-designer.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "3a45d70cdf49b218bf2d899069a376a5a5956512",
-      "size": 18757,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/3a45d70cdf49b218bf2d899069a376a5a5956512"
-    },
-    {
-      "path": "apps/development/digit-recognition-wasm.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "6d06c6362cb59d7e315294bf1ac5fbab43981051",
-      "size": 30142,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/6d06c6362cb59d7e315294bf1ac5fbab43981051"
-    },
-    {
-      "path": "apps/development/docker-compose-builder.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "82494a431c350e9b2ac0f93d289bcca999b78d08",
-      "size": 18817,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/82494a431c350e9b2ac0f93d289bcca999b78d08"
-    },
-    {
-      "path": "apps/development/git-visualizer.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "80cc197ec32e324b33cdf08ee2ca1610fb9b86b7",
-      "size": 18760,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/80cc197ec32e324b33cdf08ee2ca1610fb9b86b7"
-    },
-    {
-      "path": "apps/development/graphql-playground.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "4a73222a77dbbba1811fd4a425ae4a5decbe9281",
-      "size": 18755,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/4a73222a77dbbba1811fd4a425ae4a5decbe9281"
-    },
-    {
-      "path": "apps/development/iframe-tunneler-10.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "d6861249f7769b3cc187f20547cca90833b81c85",
-      "size": 50831,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/d6861249f7769b3cc187f20547cca90833b81c85"
-    },
-    {
-      "path": "apps/development/json-schema-designer.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "dd89b020b51076da1286a567923cda7c12907363",
-      "size": 18794,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/dd89b020b51076da1286a567923cda7c12907363"
-    },
-    {
-      "path": "apps/development/performance-profiler.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "aa2cdbe55875f7512f6dde3a76f9b885c364eb2e",
-      "size": 18787,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/aa2cdbe55875f7512f6dde3a76f9b885c364eb2e"
-    },
-    {
-      "path": "apps/development/regex-builder.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "5157ea5c1457a4a3a9b50972c0df14e049e7459f",
-      "size": 18776,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/5157ea5c1457a4a3a9b50972c0df14e049e7459f"
-    },
-    {
-      "path": "apps/development/service-worker-manager.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "882dc27e2aaef5f60a3a2051df0ae5709148d7cd",
-      "size": 18795,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/882dc27e2aaef5f60a3a2051df0ae5709148d7cd"
-    },
-    {
-      "path": "apps/development/typescript-playground.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "7978d6598b499ec6d1ba15e1eca135e38c25ecae",
-      "size": 18777,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/7978d6598b499ec6d1ba15e1eca135e38c25ecae"
-    },
-    {
-      "path": "apps/development/web-component-builder.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "a8e64a9c87dccea2df81827d3d044bdc99b09f15",
-      "size": 18785,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/a8e64a9c87dccea2df81827d3d044bdc99b09f15"
-    },
-    {
-      "path": "apps/development/webpack-config-generator.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "8e131f4b6579a5ac5f5311af4996c2448f979e5b",
-      "size": 18811,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/8e131f4b6579a5ac5f5311af4996c2448f979e5b"
-    },
-    {
-      "path": "apps/development/websocket-debugger.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "31b16d13fe0b0379db2db6b5817361ce3421540d",
-      "size": 18805,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/31b16d13fe0b0379db2db6b5817361ce3421540d"
-    },
-    {
-      "path": "apps/education",
-      "mode": "040000",
-      "type": "tree",
-      "sha": "91115f0c281854fb3d1726307a8ca45ccc36343f",
-      "url": "https://api.github.com/repos/kody-w/base/git/trees/91115f0c281854fb3d1726307a8ca45ccc36343f"
-    },
-    {
-      "path": "apps/education/chemistry-lab-simulator.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "7268eedb30434487488ad60c0b32d8f4cdc5d520",
-      "size": 18768,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/7268eedb30434487488ad60c0b32d8f4cdc5d520"
-    },
-    {
-      "path": "apps/education/code-learning-path.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "c647bdfe6fa3b86197f6287b1421eed4e7aaf3f7",
-      "size": 18737,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/c647bdfe6fa3b86197f6287b1421eed4e7aaf3f7"
-    },
-    {
-      "path": "apps/education/language-flashcards.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "36598c8c44829a4570128769e233bc71afe77d1d",
-      "size": 18752,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/36598c8c44829a4570128769e233bc71afe77d1d"
-    },
-    {
-      "path": "apps/education/math-formula-visualizer.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "a08ec0c9dfff21c205863cc3977e22e71fe3c14b",
-      "size": 18787,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/a08ec0c9dfff21c205863cc3977e22e71fe3c14b"
-    },
-    {
-      "path": "apps/education/physics-playground.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "a416fffd0965d527cf91c4c99ba7f36cc08a710c",
-      "size": 18754,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/a416fffd0965d527cf91c4c99ba7f36cc08a710c"
-    },
-    {
-      "path": "apps/games",
-      "mode": "040000",
-      "type": "tree",
-      "sha": "47e4af97f5278af70602349a0f31046baa9a5f30",
-      "url": "https://api.github.com/repos/kody-w/base/git/trees/47e4af97f5278af70602349a0f31046baa9a5f30"
-    },
-    {
-      "path": "apps/games/algorithm-arena.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "d77311f827c9a4b063a97d8afd6ea98e8ef80ea7",
-      "size": 18803,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/d77311f827c9a4b063a97d8afd6ea98e8ef80ea7"
-    },
-    {
-      "path": "apps/games/balatro-clone.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "61c9ca21883a7fd23c5e46fd65d4abe3ba346ae5",
-      "size": 83269,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/61c9ca21883a7fd23c5e46fd65d4abe3ba346ae5"
-    },
-    {
-      "path": "apps/games/civ-simulator.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "abc22842fc7d2e95921684521628549c23974bfd",
-      "size": 33067,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/abc22842fc7d2e95921684521628549c23974bfd"
-    },
-    {
-      "path": "apps/games/code-warriors.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "3f2771589e0c82c465fd808d19ebf918ff8065c6",
-      "size": 18732,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/3f2771589e0c82c465fd808d19ebf918ff8065c6"
-    },
-    {
-      "path": "apps/games/crypto-miner-tycoon.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "59eb64cee67a494b7540e4e457e7ad53287625ac",
-      "size": 18799,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/59eb64cee67a494b7540e4e457e7ad53287625ac"
-    },
-    {
-      "path": "apps/games/drone-simulator-link-app.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "273e21c714bcc5fca8f8b3a860abda31aa66e3ad",
-      "size": 5755,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/273e21c714bcc5fca8f8b3a860abda31aa66e3ad"
-    },
-    {
-      "path": "apps/games/drone-simulator.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "81275ef7bce4e9ca184249e7b7e1108e53309869",
-      "size": 14056,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/81275ef7bce4e9ca184249e7b7e1108e53309869"
-    },
-    {
-      "path": "apps/games/feedShyworm4.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "64cd8cb655344994eb45f539a406596a8e953d79",
-      "size": 42068,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/64cd8cb655344994eb45f539a406596a8e953d79"
-    },
-    {
-      "path": "apps/games/fractal-explorer.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "7d4a7739e9d5b95524e80a261e42c82fea3c8feb",
-      "size": 18764,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/7d4a7739e9d5b95524e80a261e42c82fea3c8feb"
-    },
-    {
-      "path": "apps/games/gameboy-emulator.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "30c8ab37c3f9c4cea4ca7c55dc5d42a23f316139",
-      "size": 29740,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/30c8ab37c3f9c4cea4ca7c55dc5d42a23f316139"
-    },
-    {
-      "path": "apps/games/gameoflife.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "5d44f52eec168d077ea199d5d660a21f79c35bb9",
-      "size": 46562,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/5d44f52eec168d077ea199d5d660a21f79c35bb9"
-    },
-    {
-      "path": "apps/games/hacker-simulator.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "601f5a88070b080e6e4281b2b4ee69b6d5fbe0ac",
-      "size": 18803,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/601f5a88070b080e6e4281b2b4ee69b6d5fbe0ac"
-    },
-    {
-      "path": "apps/games/hex-empire.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "48ac178c4334f2fe26439a79ef1d23485af30303",
-      "size": 18789,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/48ac178c4334f2fe26439a79ef1d23485af30303"
-    },
-    {
-      "path": "apps/games/memory-matrix.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "ad09a7ed23d998ccbfe9360848a2bfd225e45a12",
-      "size": 18800,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/ad09a7ed23d998ccbfe9360848a2bfd225e45a12"
-    },
-    {
-      "path": "apps/games/neural-network-racing.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "0f97e40235981c0f5f82a0b1dd37cd1e6ba532f4",
-      "size": 18786,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/0f97e40235981c0f5f82a0b1dd37cd1e6ba532f4"
-    },
-    {
-      "path": "apps/games/particle-life.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "16015a7870dfea22edaee4884ccdf76639be9a04",
-      "size": 18774,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/16015a7870dfea22edaee4884ccdf76639be9a04"
-    },
-    {
-      "path": "apps/games/pixel-physics.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "f0deadaab4993846a10cb1a09f6fb0cfe752da14",
-      "size": 18766,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/f0deadaab4993846a10cb1a09f6fb0cfe752da14"
-    },
-    {
-      "path": "apps/games/pokemon-generator-full-html.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "0c90c02aa9c6e02f9f3109e2c18138ee5cbfa7aa",
-      "size": 41666,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/0c90c02aa9c6e02f9f3109e2c18138ee5cbfa7aa"
-    },
-    {
-      "path": "apps/games/poker-trainer-continued.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "e789830f37b2c4ef751c63bea7a9944ffb9e122e",
-      "size": 71991,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/e789830f37b2c4ef751c63bea7a9944ffb9e122e"
-    },
-    {
-      "path": "apps/games/racing.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "2ba8e2b2b80be2a539e90546d8ec89565661ecd9",
-      "size": 154810,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/2ba8e2b2b80be2a539e90546d8ec89565661ecd9"
-    },
-    {
-      "path": "apps/games/racing2.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "3512df71c95aa0ea2fb4bab59f3917e998fa4d8c",
-      "size": 38380,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/3512df71c95aa0ea2fb4bab59f3917e998fa4d8c"
-    },
-    {
-      "path": "apps/games/rhythm-coder.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "f0b7701a691f04b0d7cc980962c701211236a9c5",
-      "size": 18763,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/f0b7701a691f04b0d7cc980962c701211236a9c5"
-    },
-    {
-      "path": "apps/games/roblox-clone.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "686ab7d9827449461895d911d0ab452419889028",
-      "size": 23639,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/686ab7d9827449461895d911d0ab452419889028"
-    },
-    {
-      "path": "apps/games/space-colony-builder.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "36540f2ad28b19f75f3bad5ca561c8e1829307ae",
-      "size": 18805,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/36540f2ad28b19f75f3bad5ca561c8e1829307ae"
-    },
-    {
-      "path": "apps/games/tile-room-3d.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "4cb72316fed5aba84e12e34550b567b1aaf2d20e",
-      "size": 21746,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/4cb72316fed5aba84e12e34550b567b1aaf2d20e"
-    },
-    {
-      "path": "apps/games/tower-defense-ai.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "1613bb53b7cef9676a6704de595ff15a12bd88b0",
-      "size": 18751,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/1613bb53b7cef9676a6704de595ff15a12bd88b0"
-    },
-    {
-      "path": "apps/games/webgl-maze-runner.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "823ffea2e46e70554b42292a6005dbd7b7163943",
-      "size": 18776,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/823ffea2e46e70554b42292a6005dbd7b7163943"
-    },
-    {
-      "path": "apps/health",
-      "mode": "040000",
-      "type": "tree",
-      "sha": "df239b33f38f3584a7886c851f9bcbff82f0bb4d",
-      "url": "https://api.github.com/repos/kody-w/base/git/trees/df239b33f38f3584a7886c851f9bcbff82f0bb4d"
-    },
-    {
-      "path": "apps/health/calorie-calculator.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "b6ec450cef8805ee4a9bed3f91e9c2ac427e9ba4",
-      "size": 18720,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/b6ec450cef8805ee4a9bed3f91e9c2ac427e9ba4"
-    },
-    {
-      "path": "apps/health/meditation-timer-pro.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "add8e6a9902f1654c82a0f50cdd2f62668eb0605",
-      "size": 18804,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/add8e6a9902f1654c82a0f50cdd2f62668eb0605"
-    },
-    {
-      "path": "apps/health/sleep-cycle-tracker.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "662af963486469bd5bc7ddf40f5e430a17aa1ee7",
-      "size": 18749,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/662af963486469bd5bc7ddf40f5e430a17aa1ee7"
-    },
-    {
-      "path": "apps/health/stress-level-monitor.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "d3dcd1611dd7188638eb772d0b26178070caaa3e",
-      "size": 18800,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/d3dcd1611dd7188638eb772d0b26178070caaa3e"
-    },
-    {
-      "path": "apps/health/workout-planner.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "7963a2b20780bfc82fe28db5717b128a03c62ca4",
-      "size": 18779,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/7963a2b20780bfc82fe28db5717b128a03c62ca4"
-    },
-    {
-      "path": "apps/media",
-      "mode": "040000",
-      "type": "tree",
-      "sha": "9fcf29b39af6c5770f3874e21440cdc13fa3d3a4",
-      "url": "https://api.github.com/repos/kody-w/base/git/trees/9fcf29b39af6c5770f3874e21440cdc13fa3d3a4"
-    },
-    {
-      "path": "apps/media/3d-model-viewer.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "034a813fb130b2a6a14c86f7cf5492ace208d97d",
-      "size": 18754,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/034a813fb130b2a6a14c86f7cf5492ace208d97d"
-    },
-    {
-      "path": "apps/media/audio-waveform-editor.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "9100bfcb921256e64e16041210d9bddce42d7815",
-      "size": 18762,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/9100bfcb921256e64e16041210d9bddce42d7815"
-    },
-    {
-      "path": "apps/media/color-blindness-simulator.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "dc80f7d2db329edaad31a653887d24f8eaac76fc",
-      "size": 18808,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/dc80f7d2db329edaad31a653887d24f8eaac76fc"
-    },
-    {
-      "path": "apps/media/drum-machine-808.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "f34f12fa4b1d92867db7aa603b1a1cb60f669070",
-      "size": 99611,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/f34f12fa4b1d92867db7aa603b1a1cb60f669070"
-    },
-    {
-      "path": "apps/media/font-pairing-tool.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "c836305a02d50d28ccbea9b543e593f80a2c5521",
-      "size": 18788,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/c836305a02d50d28ccbea9b543e593f80a2c5521"
-    },
-    {
-      "path": "apps/media/gif-maker-studio.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "80377dc6d05f17183d2a1a3fb413b27d4bb32e92",
-      "size": 18740,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/80377dc6d05f17183d2a1a3fb413b27d4bb32e92"
-    },
-    {
-      "path": "apps/media/image-metadata-viewer.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "260c05ede5f1113b37daaffe69112ee14be18185",
-      "size": 18756,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/260c05ede5f1113b37daaffe69112ee14be18185"
-    },
-    {
-      "path": "apps/media/media-format-converter.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "f2bb2169e139ef0a142091bf70186a1d6c12f831",
-      "size": 18830,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/f2bb2169e139ef0a142091bf70186a1d6c12f831"
-    },
-    {
-      "path": "apps/media/podcast-transcript-editor.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "e2db9d2bf63e011042f874e9523e3370850371ee",
-      "size": 18818,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/e2db9d2bf63e011042f874e9523e3370850371ee"
-    },
-    {
-      "path": "apps/media/svg-animation-studio.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "5bf6edc5da3133c2d5e29f1d7f22db4cf40cb747",
-      "size": 18746,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/5bf6edc5da3133c2d5e29f1d7f22db4cf40cb747"
-    },
-    {
-      "path": "apps/media/video-frame-extractor.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "92c8c91d996ff6d69fc8ab450dff3dac3b617ad9",
-      "size": 18785,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/92c8c91d996ff6d69fc8ab450dff3dac3b617ad9"
-    },
-    {
-      "path": "apps/media/webgl-particle-universe.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "24d853540ebad7ce68a8344bc551cbcaba89bfb3",
-      "size": 36895,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/24d853540ebad7ce68a8344bc551cbcaba89bfb3"
-    },
-    {
-      "path": "apps/productivity",
-      "mode": "040000",
-      "type": "tree",
-      "sha": "04c52403328484b01ad41e34e8d81bf3994178d6",
-      "url": "https://api.github.com/repos/kody-w/base/git/trees/04c52403328484b01ad41e34e8d81bf3994178d6"
-    },
-    {
-      "path": "apps/productivity/autonomous-book-factory.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "92a899a2bb4a915f09097065075105286fa4b63b",
-      "size": 48995,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/92a899a2bb4a915f09097065075105286fa4b63b"
-    },
-    {
-      "path": "apps/productivity/book-factory-world.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "c8ec6ceda8f9a85a3a6b42539366753ddd5e5227",
-      "size": 114634,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/c8ec6ceda8f9a85a3a6b42539366753ddd5e5227"
-    },
-    {
-      "path": "apps/productivity/calendar-heatmap.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "e5dd408261b0233ca0d4ac689c16369822e09adc",
-      "size": 18781,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/e5dd408261b0233ca0d4ac689c16369822e09adc"
-    },
-    {
-      "path": "apps/productivity/compressed-book-factory.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "a8c8774006d56799de06c28c4453a46b6a8df15e",
-      "size": 35350,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/a8c8774006d56799de06c28c4453a46b6a8df15e"
-    },
-    {
-      "path": "apps/productivity/decision-matrix-tool.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "383b275d96f70cfbe3a26841b6ff12b722802972",
-      "size": 18827,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/383b275d96f70cfbe3a26841b6ff12b722802972"
-    },
-    {
-      "path": "apps/productivity/email-template-designer.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "74e7ced225abe6bcdc662cb788cfb7144d140d49",
-      "size": 18769,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/74e7ced225abe6bcdc662cb788cfb7144d140d49"
-    },
-    {
-      "path": "apps/productivity/focus-flow-timer.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "0c4adfd188b91e80f6cbcf71d8e14791c42468b5",
-      "size": 18777,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/0c4adfd188b91e80f6cbcf71d8e14791c42468b5"
-    },
-    {
-      "path": "apps/productivity/habit-tracker-matrix.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "a8ba2cace0661f4661502df6c004cf594e900db2",
-      "size": 18768,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/a8ba2cace0661f4661502df6c004cf594e900db2"
-    },
-    {
-      "path": "apps/productivity/knowledge-graph-builder.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "3b7d746694257d9a8a93c17aceedc5f7165eb7f3",
-      "size": 18821,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/3b7d746694257d9a8a93c17aceedc5f7165eb7f3"
-    },
-    {
-      "path": "apps/productivity/meeting-cost-calculator.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "aca400aaf062847c5541afe09547021415a36cc5",
-      "size": 18762,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/aca400aaf062847c5541afe09547021415a36cc5"
-    },
-    {
-      "path": "apps/productivity/memory-palace.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "9940e9ab60eccc5e90091db96e99a2358371302a",
-      "size": 31032,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/9940e9ab60eccc5e90091db96e99a2358371302a"
-    },
-    {
-      "path": "apps/productivity/mind-map-builder.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "ac890ad3201ed3dcefaf03eccab49b0f50a60794",
-      "size": 18708,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/ac890ad3201ed3dcefaf03eccab49b0f50a60794"
-    },
-    {
-      "path": "apps/productivity/okr-tracker.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "2d40b8b278b6191ead6e86139251042342dd748e",
-      "size": 18743,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/2d40b8b278b6191ead6e86139251042342dd748e"
-    },
-    {
-      "path": "apps/productivity/omni-writer.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "4e6e2f8835069fdf1f0ad30c7b1915705bfbf57a",
-      "size": 80746,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/4e6e2f8835069fdf1f0ad30c7b1915705bfbf57a"
-    },
-    {
-      "path": "apps/productivity/presentation_app_complete.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "a1e4d4ce60738df7510fedb769b0ffa3cf4aedfa",
-      "size": 65620,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/a1e4d4ce60738df7510fedb769b0ffa3cf4aedfa"
-    },
-    {
-      "path": "apps/productivity/project-timeline-creator.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "f68959676e487b500bb295630ca5736bf76aac46",
-      "size": 18795,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/f68959676e487b500bb295630ca5736bf76aac46"
-    },
-    {
-      "path": "apps/productivity/smart-task-scheduler.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "cb13ae735af8d8a1ba6d4c9ced96e7356b3c6144",
-      "size": 18809,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/cb13ae735af8d8a1ba6d4c9ced96e7356b3c6144"
-    },
-    {
-      "path": "apps/productivity/speed-reading-trainer.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "98aa422acf5096400b7d26a4b88e473f856bb00e",
-      "size": 18839,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/98aa422acf5096400b7d26a4b88e473f856bb00e"
-    },
-    {
-      "path": "apps/productivity/team-standup-timer.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "07837fb476f61386336bf2b8406c7c78a4977fbf",
-      "size": 18775,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/07837fb476f61386336bf2b8406c7c78a4977fbf"
-    },
-    {
-      "path": "apps/productivity/time-zone-dashboard.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "894103cd464661ba44dcaed586355ef3162b96c8",
-      "size": 18819,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/894103cd464661ba44dcaed586355ef3162b96c8"
-    },
-    {
-      "path": "apps/productivity/timezone-converter-tool.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "81cbf38413e4fec6d24ab17d60c9132f7d54239e",
-      "size": 26035,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/81cbf38413e4fec6d24ab17d60c9132f7d54239e"
-    },
-    {
-      "path": "apps/productivity/workflow-automator.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "5b4274ea6ad2fe0f0f940e998387bda96dbbbee6",
-      "size": 18725,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/5b4274ea6ad2fe0f0f940e998387bda96dbbbee6"
-    },
-    {
-      "path": "apps/utilities",
-      "mode": "040000",
-      "type": "tree",
-      "sha": "fb3f4f58914105be950dc97838efbba5b73fc83a",
-      "url": "https://api.github.com/repos/kody-w/base/git/trees/fb3f4f58914105be950dc97838efbba5b73fc83a"
-    },
-    {
-      "path": "apps/utilities/base64-encoder-suite.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "e0eaa343518e843bf976d4cf37432e3af316d824",
-      "size": 18757,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/e0eaa343518e843bf976d4cf37432e3af316d824"
-    },
-    {
-      "path": "apps/utilities/browser-storage-manager.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "5c4b2aa36cbd005cd20a554f8231250a98f61041",
-      "size": 18778,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/5c4b2aa36cbd005cd20a554f8231250a98f61041"
-    },
-    {
-      "path": "apps/utilities/clipboard-history-manager.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "18f7c7cce0ce1fc317eb6816cefa98008d559762",
-      "size": 5006,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/18f7c7cce0ce1fc317eb6816cefa98008d559762"
-    },
-    {
-      "path": "apps/utilities/cron-expression-builder.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "55193fe8270ddc79ec3dc7b1e75f0d1a74704041",
-      "size": 18773,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/55193fe8270ddc79ec3dc7b1e75f0d1a74704041"
-    },
-    {
-      "path": "apps/utilities/file-hash-calculator.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "4f9511fe25dcda206d431cec0215a4c1f533f146",
-      "size": 18804,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/4f9511fe25dcda206d431cec0215a4c1f533f146"
-    },
-    {
-      "path": "apps/utilities/ghz-mvp-messenger.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "7b4f75c02bda4147bd83be0bf40c78460acec596",
-      "size": 18094,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/7b4f75c02bda4147bd83be0bf40c78460acec596"
-    },
-    {
-      "path": "apps/utilities/ghz-three-person-sync.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "52f9ebfe11461444d5f082770e0de6b28cfa23fc",
-      "size": 22754,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/52f9ebfe11461444d5f082770e0de6b28cfa23fc"
-    },
-    {
-      "path": "apps/utilities/lorem-ipsum-plus.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "b8d18211a21900134da0e937a4e542a8037fbc51",
-      "size": 18754,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/b8d18211a21900134da0e937a4e542a8037fbc51"
-    },
-    {
-      "path": "apps/utilities/network-speed-test.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "0b56b53789edab07c42413373d49676ed7bccf4b",
-      "size": 18736,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/0b56b53789edab07c42413373d49676ed7bccf4b"
-    },
-    {
-      "path": "apps/utilities/password-strength-analyzer.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "2a1d92a65809e22cb988f8c15a4a8f5558d18052",
-      "size": 18831,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/2a1d92a65809e22cb988f8c15a4a8f5558d18052"
-    },
-    {
-      "path": "apps/utilities/qr-code-studio.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "c2bfc3acb8bacb9c09816b62ac7bf07e21e7109c",
-      "size": 18724,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/c2bfc3acb8bacb9c09816b62ac7bf07e21e7109c"
-    },
-    {
-      "path": "apps/utilities/quantum-reality-driver-enhanced.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "51c4fd48deaff2978b48b9a88750c45b076bd0b4",
-      "size": 42576,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/51c4fd48deaff2978b48b9a88750c45b076bd0b4"
-    },
-    {
-      "path": "apps/utilities/quantum-seal-detector.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "4468cb53f1a4b18c3e7aea94fe4a6304dbdb375d",
-      "size": 18682,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/4468cb53f1a4b18c3e7aea94fe4a6304dbdb375d"
-    },
-    {
-      "path": "apps/utilities/quantum-seal-system.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "677dba440fe46383c25b4a92b0595d68236adf2a",
-      "size": 41306,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/677dba440fe46383c25b4a92b0595d68236adf2a"
-    },
-    {
-      "path": "apps/utilities/quantum-sealed-messenger.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "7fec4deff1738b87b13495a5f882de4da6e5bf41",
-      "size": 33006,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/7fec4deff1738b87b13495a5f882de4da6e5bf41"
-    },
-    {
-      "path": "apps/utilities/quantum-synchronized-ftl.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "bb8eb17c7b4309754c96debb34a6374cf5df3e22",
-      "size": 31899,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/bb8eb17c7b4309754c96debb34a6374cf5df3e22"
-    },
-    {
-      "path": "apps/utilities/quantum-tripartite-messenger.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "0577badd03092baa173af900cf5a596f4b455c99",
-      "size": 37039,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/0577badd03092baa173af900cf5a596f4b455c99"
-    },
-    {
-      "path": "apps/utilities/quantum-vm-threejs.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "d88cf80db302f5a32412d0f5be44c93371e1e92b",
-      "size": 28123,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/d88cf80db302f5a32412d0f5be44c93371e1e92b"
-    },
-    {
-      "path": "apps/utilities/screen-recorder-lite.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "44156c8830bf467988d4f1bb603ab4c2b0f6f7d2",
-      "size": 4992,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/44156c8830bf467988d4f1bb603ab4c2b0f6f7d2"
-    },
-    {
-      "path": "apps/utilities/system-monitor.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "4709d1aa429a683215ed0a16c73c52931ea98af1",
-      "size": 18747,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/4709d1aa429a683215ed0a16c73c52931ea98af1"
-    },
-    {
-      "path": "apps/utilities/uuid-generator-pro.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "59985dae98fdf002ba6e7e2df76b4fdd4de48042",
-      "size": 18865,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/59985dae98fdf002ba6e7e2df76b4fdd4de48042"
-    },
-    {
-      "path": "index.html",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "e46d78a8d7891b80ec6d9710f413ee3cf4526ead",
-      "size": 85766,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/e46d78a8d7891b80ec6d9710f413ee3cf4526ead"
-    },
-    {
-      "path": "link_validation_report.md",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "2a90cea701ad4c570a13f76e9e63a61c78219685",
-      "size": 3709,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/2a90cea701ad4c570a13f76e9e63a61c78219685"
-    },
-    {
-      "path": "robots.txt",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "68faa4fb2ca954112788965e3176b79b1c808450",
-      "size": 74,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/68faa4fb2ca954112788965e3176b79b1c808450"
-    },
-    {
-      "path": "update-existing-repo.sh",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "55f55f7a92a82038cc5e832c2fc3a5288fd5b1ec",
-      "size": 3512,
-      "url": "https://api.github.com/repos/kody-w/base/git/blobs/55f55f7a92a82038cc5e832c2fc3a5288fd5b1ec"
-    }
-  ],
-  "truncated": false
+ "sha": "8a26979a82c83c57b2d1e3b11936a4aed06bfe25",
+ "url": "https://api.github.com/repos/kody-w/base/git/trees/8a26979a82c83c57b2d1e3b11936a4aed06bfe25",
+ "tree": [
+  {
+   "path": ".claude",
+   "mode": "040000",
+   "type": "tree",
+   "sha": "403a4e0eeb1ff898f291f47fae677ef1f9f2bfe8",
+   "url": "https://api.github.com/repos/kody-w/base/git/trees/403a4e0eeb1ff898f291f47fae677ef1f9f2bfe8"
+  },
+  {
+   "path": ".claude/agents",
+   "mode": "040000",
+   "type": "tree",
+   "sha": "d2f5f80b14dab2693a5ecf46045025e39bc7e3a2",
+   "url": "https://api.github.com/repos/kody-w/base/git/trees/d2f5f80b14dab2693a5ecf46045025e39bc7e3a2"
+  },
+  {
+   "path": ".claude/agents/github-pages-validator.md",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "d626dff0bac85783eae9ab003064aca754f59bf2",
+   "size": 5468,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/d626dff0bac85783eae9ab003064aca754f59bf2"
+  },
+  {
+   "path": ".claude/agents/link-validator.md",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "4b26ed6bbc5e7055dcf8900090b369c01d669f2b",
+   "size": 4620,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/4b26ed6bbc5e7055dcf8900090b369c01d669f2b"
+  },
+  {
+   "path": ".claude/agents/repo-steward.md",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "0120fd088913c94588dd1876ed2d37ffaacae431",
+   "size": 7307,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/0120fd088913c94588dd1876ed2d37ffaacae431"
+  },
+  {
+   "path": ".claude/agents/steward-innovator.md",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "518e07ca8bfeb5a33205f063d973cd5b3e3c1392",
+   "size": 3992,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/518e07ca8bfeb5a33205f063d973cd5b3e3c1392"
+  },
+  {
+   "path": ".claude/agents/steward-orchestrator.md",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "432161bccebd889a3c16a8f32fa5d5d8d2cb9439",
+   "size": 5636,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/432161bccebd889a3c16a8f32fa5d5d8d2cb9439"
+  },
+  {
+   "path": ".claude/agents/web-file-generator.md",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "e1f62eedf359ebfd8bdb84160d52beb362b31904",
+   "size": 4577,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/e1f62eedf359ebfd8bdb84160d52beb362b31904"
+  },
+  {
+   "path": ".github",
+   "mode": "040000",
+   "type": "tree",
+   "sha": "7dd1382ae05b3d960147766bef149142921e852b",
+   "url": "https://api.github.com/repos/kody-w/base/git/trees/7dd1382ae05b3d960147766bef149142921e852b"
+  },
+  {
+   "path": ".github/workflows",
+   "mode": "040000",
+   "type": "tree",
+   "sha": "32ed1ba07522b9203b502a87e041551660b3e5e7",
+   "url": "https://api.github.com/repos/kody-w/base/git/trees/32ed1ba07522b9203b502a87e041551660b3e5e7"
+  },
+  {
+   "path": ".github/workflows/harvest-tree.yml",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "8190a157b87c81289770f7566c490de89d9cf5e7",
+   "size": 1051,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/8190a157b87c81289770f7566c490de89d9cf5e7"
+  },
+  {
+   "path": ".gitignore",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "fe54cb60f8c67eac67f19ee9189a187cce9d55c6",
+   "size": 420,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/fe54cb60f8c67eac67f19ee9189a187cce9d55c6"
+  },
+  {
+   "path": ".nojekyll",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+   "size": 0,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+  },
+  {
+   "path": "CLAUDE.md",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "1f74ab9ed6c9e81301ff12bd44fabf982335e44c",
+   "size": 5442,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/1f74ab9ed6c9e81301ff12bd44fabf982335e44c"
+  },
+  {
+   "path": "README.md",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "cff816eb5513c8c816b01a6c942fa4756c44cb31",
+   "size": 12,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/cff816eb5513c8c816b01a6c942fa4756c44cb31"
+  },
+  {
+   "path": "apps",
+   "mode": "040000",
+   "type": "tree",
+   "sha": "b50953d4cc05342469c41c706296c788657e550d",
+   "url": "https://api.github.com/repos/kody-w/base/git/trees/b50953d4cc05342469c41c706296c788657e550d"
+  },
+  {
+   "path": "apps/ai-tools",
+   "mode": "040000",
+   "type": "tree",
+   "sha": "7e91b2914b26727bd77ff8f1e6459e0116834b56",
+   "url": "https://api.github.com/repos/kody-w/base/git/trees/7e91b2914b26727bd77ff8f1e6459e0116834b56"
+  },
+  {
+   "path": "apps/ai-tools/Copilot_Companion.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "5fa1eb66b62fe00181f9fbe54b071763ff962fce",
+   "size": 245836,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/5fa1eb66b62fe00181f9fbe54b071763ff962fce"
+  },
+  {
+   "path": "apps/ai-tools/agent-browser.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "184e47685ccf3762ea496d18fb2148d17d0ddc9c",
+   "size": 29108,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/184e47685ccf3762ea496d18fb2148d17d0ddc9c"
+  },
+  {
+   "path": "apps/ai-tools/agent-deployment-prototype.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "209588f7b64d8c00b6ed7eb60dd5d3e0cf4ce006",
+   "size": 101949,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/209588f7b64d8c00b6ed7eb60dd5d3e0cf4ce006"
+  },
+  {
+   "path": "apps/ai-tools/ai-color-palette.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "1267c86b0c849a53fa00af047ae6497ac374bbf5",
+   "size": 18845,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/1267c86b0c849a53fa00af047ae6497ac374bbf5"
+  },
+  {
+   "path": "apps/ai-tools/ai-content-generator.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "48fec327b655a34c6c64e573b8e1e7a9fcff180d",
+   "size": 5000,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/48fec327b655a34c6c64e573b8e1e7a9fcff180d"
+  },
+  {
+   "path": "apps/ai-tools/ai-data-visualizer.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "dad68c904fd2b6bf34e413ea28a810edfb5d8c3b",
+   "size": 18813,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/dad68c904fd2b6bf34e413ea28a810edfb5d8c3b"
+  },
+  {
+   "path": "apps/ai-tools/ai-document-analyzer.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "68434d5b14dc4d4382af9956f02fbefbc95edecf",
+   "size": 4990,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/68434d5b14dc4d4382af9956f02fbefbc95edecf"
+  },
+  {
+   "path": "apps/ai-tools/ai-image-enhancer.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "b93db24c0762c6a4f6f28bf54b9c18af54c19107",
+   "size": 18796,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/b93db24c0762c6a4f6f28bf54b9c18af54c19107"
+  },
+  {
+   "path": "apps/ai-tools/ai-language-tutor.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "deedf89995389a7f51d99354d3475f92cf2da120",
+   "size": 18762,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/deedf89995389a7f51d99354d3475f92cf2da120"
+  },
+  {
+   "path": "apps/ai-tools/ai-music-composer.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "a5c2803b491c56706be772e87d2531a8f411cd07",
+   "size": 18797,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/a5c2803b491c56706be772e87d2531a8f411cd07"
+  },
+  {
+   "path": "apps/ai-tools/ai-prompt-studio.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "95aed19d170724fea1a10ed39f20d0e64a3446c5",
+   "size": 23169,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/95aed19d170724fea1a10ed39f20d0e64a3446c5"
+  },
+  {
+   "path": "apps/ai-tools/ai-resume-builder.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "413fa45da439ddfbaa20733d4a0a758bcc741c8c",
+   "size": 18905,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/413fa45da439ddfbaa20733d4a0a758bcc741c8c"
+  },
+  {
+   "path": "apps/ai-tools/ai-simulation-sales-demo.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "1f2b4e78784fb938ca4f96abf53df2fafc577d24",
+   "size": 54013,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/1f2b4e78784fb938ca4f96abf53df2fafc577d24"
+  },
+  {
+   "path": "apps/ai-tools/ai-translation-hub.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "ccfd2314e6b7a6019c904f7844fe2e2c4db56660",
+   "size": 4993,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/ccfd2314e6b7a6019c904f7844fe2e2c4db56660"
+  },
+  {
+   "path": "apps/ai-tools/ai-video-summarizer.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "fdb4b0509306347c8f230f146e7bcaf992beb92b",
+   "size": 4991,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/fdb4b0509306347c8f230f146e7bcaf992beb92b"
+  },
+  {
+   "path": "apps/ai-tools/apl2ai-watch-app.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "43c9ea4c82644c0a21fef9543ae63bd57b638e66",
+   "size": 35997,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/43c9ea4c82644c0a21fef9543ae63bd57b638e66"
+  },
+  {
+   "path": "apps/ai-tools/aplAI.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "cb9c5b452b6f56af26508e28931664ad13e38086",
+   "size": 45352,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/cb9c5b452b6f56af26508e28931664ad13e38086"
+  },
+  {
+   "path": "apps/ai-tools/aplai-direct-app.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "947003c44fb6bbe500fc864d05d19c6466a31f04",
+   "size": 59938,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/947003c44fb6bbe500fc864d05d19c6466a31f04"
+  },
+  {
+   "path": "apps/ai-tools/aplai-unified-app.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "98a5dda811ebb9a0c4883375f483d26ffed0cd5e",
+   "size": 60888,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/98a5dda811ebb9a0c4883375f483d26ffed0cd5e"
+  },
+  {
+   "path": "apps/ai-tools/aplai-watch-app.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "eba1e6ce80ca008c88fdf8460f08709c028af047",
+   "size": 35343,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/eba1e6ce80ca008c88fdf8460f08709c028af047"
+  },
+  {
+   "path": "apps/ai-tools/artifact-converter.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "dcce11aac965af37cc89daefc92ba236c98bb2ab",
+   "size": 43180,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/dcce11aac965af37cc89daefc92ba236c98bb2ab"
+  },
+  {
+   "path": "apps/ai-tools/chat-persona-designer.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "c0db92b22fe7c5755f17c3f8d337459ccb60b743",
+   "size": 18859,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/c0db92b22fe7c5755f17c3f8d337459ccb60b743"
+  },
+  {
+   "path": "apps/ai-tools/claude-subagents-tutorial-continued.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "fc5a8a78ae2f6707604be2a3d055d815751d4200",
+   "size": 49199,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/fc5a8a78ae2f6707604be2a3d055d815751d4200"
+  },
+  {
+   "path": "apps/ai-tools/claude-subagents-tutorial.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "81a0e891fa777d00c3e9010efeb130028f723667",
+   "size": 62153,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/81a0e891fa777d00c3e9010efeb130028f723667"
+  },
+  {
+   "path": "apps/ai-tools/code-explainer-ai.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "cf061ce32439a55b88e3db1201e7d50d368f32ba",
+   "size": 18877,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/cf061ce32439a55b88e3db1201e7d50d368f32ba"
+  },
+  {
+   "path": "apps/ai-tools/complete-voice-assistant.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "f6877f76e95cb8a0922d9d5c6040fbb8bb3d4357",
+   "size": 49213,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/f6877f76e95cb8a0922d9d5c6040fbb8bb3d4357"
+  },
+  {
+   "path": "apps/ai-tools/consolidated-ai-tools.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "61883804b8db55867284df2c240e43ddd46b9702",
+   "size": 59875,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/61883804b8db55867284df2c240e43ddd46b9702"
+  },
+  {
+   "path": "apps/ai-tools/copilot-agent-store.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "ad4e9654248e69a821659431ef4a821ca11509ff",
+   "size": 39844,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/ad4e9654248e69a821659431ef4a821ca11509ff"
+  },
+  {
+   "path": "apps/ai-tools/data",
+   "mode": "040000",
+   "type": "tree",
+   "sha": "5603cfc8992cf115694333cc2c17ed699d27c38f",
+   "url": "https://api.github.com/repos/kody-w/base/git/trees/5603cfc8992cf115694333cc2c17ed699d27c38f"
+  },
+  {
+   "path": "apps/ai-tools/data/agents-commits.json",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "0967ef424bce6791893e9a57bb952f80fd536e93",
+   "size": 3,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/0967ef424bce6791893e9a57bb952f80fd536e93"
+  },
+  {
+   "path": "apps/ai-tools/data/agents-listing.json",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+   "size": 3,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/fe51488c7066f6687ef680d6bfaa4f7768ef205c"
+  },
+  {
+   "path": "apps/ai-tools/data/deployment-agents-listing.json",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+   "size": 3,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/fe51488c7066f6687ef680d6bfaa4f7768ef205c"
+  },
+  {
+   "path": "apps/ai-tools/face-mesh-editor.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "ec7b8a9f2b80e7a1df86b3553f62314073268df3",
+   "size": 18746,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/ec7b8a9f2b80e7a1df86b3553f62314073268df3"
+  },
+  {
+   "path": "apps/ai-tools/neural-style-transfer.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "245192f7e6f345e2c1815384d9383e059ec0805a",
+   "size": 22472,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/245192f7e6f345e2c1815384d9383e059ec0805a"
+  },
+  {
+   "path": "apps/ai-tools/sentiment-analyzer.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "e9ebc93499f3b32d5a8614dd12de08263f272c27",
+   "size": 18974,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/e9ebc93499f3b32d5a8614dd12de08263f272c27"
+  },
+  {
+   "path": "apps/ai-tools/smart-form-builder.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "f71dc78441b2d87332c220c974267e43fbc339be",
+   "size": 18818,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/f71dc78441b2d87332c220c974267e43fbc339be"
+  },
+  {
+   "path": "apps/business",
+   "mode": "040000",
+   "type": "tree",
+   "sha": "69d9dd18fbd97c8150af298dca9f5d798e292382",
+   "url": "https://api.github.com/repos/kody-w/base/git/trees/69d9dd18fbd97c8150af298dca9f5d798e292382"
+  },
+  {
+   "path": "apps/business/business-model-canvas.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "b373753fa2a0b69612c664dbdbc3b10d14396f2c",
+   "size": 18727,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/b373753fa2a0b69612c664dbdbc3b10d14396f2c"
+  },
+  {
+   "path": "apps/business/competitor-analysis-matrix.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "a0db97237845977da30376c09d43feb93b21bb6d",
+   "size": 18840,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/a0db97237845977da30376c09d43feb93b21bb6d"
+  },
+  {
+   "path": "apps/business/customer-journey-mapper.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "21c95240e681a41e1748aacec4175ae67181f4d9",
+   "size": 18799,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/21c95240e681a41e1748aacec4175ae67181f4d9"
+  },
+  {
+   "path": "apps/business/dynamics365-email-automation.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "ccf4b8a1551e71c2b2e0e1312f8f3c9836153dda",
+   "size": 36973,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/ccf4b8a1551e71c2b2e0e1312f8f3c9836153dda"
+  },
+  {
+   "path": "apps/business/financial-dashboard.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "55cb72ea6e81e5e9af51f1eed9f3922622672809",
+   "size": 18745,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/55cb72ea6e81e5e9af51f1eed9f3922622672809"
+  },
+  {
+   "path": "apps/business/hormozi_demo_complete.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "20e4293fd1f42747c9ea4e8d7e0b3c9bb8109959",
+   "size": 44132,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/20e4293fd1f42747c9ea4e8d7e0b3c9bb8109959"
+  },
+  {
+   "path": "apps/business/influence-mastery-app.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "1bd752ff81540a968605fa7d573b8bc2eb660f1b",
+   "size": 50063,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/1bd752ff81540a968605fa7d573b8bc2eb660f1b"
+  },
+  {
+   "path": "apps/business/invoice-generator-pro.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "aad85c945eade75e4271ee9f4bc579041c759fd6",
+   "size": 18809,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/aad85c945eade75e4271ee9f4bc579041c759fd6"
+  },
+  {
+   "path": "apps/business/market-size-calculator.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "f99e4dd23c58e076ad57494cc2451cfb40618e19",
+   "size": 18807,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/f99e4dd23c58e076ad57494cc2451cfb40618e19"
+  },
+  {
+   "path": "apps/business/pitch-deck-builder.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "34336bfdc83a8f2ed4f303fc9c438855943d5e7f",
+   "size": 18797,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/34336bfdc83a8f2ed4f303fc9c438855943d5e7f"
+  },
+  {
+   "path": "apps/business/roi-calculator-suite.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "861e87ec2bc01c35c2ca0b6f5ca660d1b7692511",
+   "size": 18758,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/861e87ec2bc01c35c2ca0b6f5ca660d1b7692511"
+  },
+  {
+   "path": "apps/business/sales-pipeline-tracker.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "b929171048949dfe310d0717a94051fc6752eb33",
+   "size": 18799,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/b929171048949dfe310d0717a94051fc6752eb33"
+  },
+  {
+   "path": "apps/business/swot-analysis-tool.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "02639e62f7b47b15f03ead6233dbe8a7660fe4b0",
+   "size": 18789,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/02639e62f7b47b15f03ead6233dbe8a7660fe4b0"
+  },
+  {
+   "path": "apps/development",
+   "mode": "040000",
+   "type": "tree",
+   "sha": "ff79d4bd7dd537e4eecd90784153a869f4d69d40",
+   "url": "https://api.github.com/repos/kody-w/base/git/trees/ff79d4bd7dd537e4eecd90784153a869f4d69d40"
+  },
+  {
+   "path": "apps/development/azure-vm-hackernews-backup.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "7a93be3555d2bd3fa47af403e205529f7d488d07",
+   "size": 55169,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/7a93be3555d2bd3fa47af403e205529f7d488d07"
+  },
+  {
+   "path": "apps/development/azure-vm-hackernews.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "eb9406c0a06f0c2e9907dc253cb817e4786a804d",
+   "size": 32967,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/eb9406c0a06f0c2e9907dc253cb817e4786a804d"
+  },
+  {
+   "path": "apps/development/browser-vm-app.html",
+   "mode": "100755",
+   "type": "blob",
+   "sha": "46ee054087862678e2e927e5b3b41901c5b9193f",
+   "size": 45404,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/46ee054087862678e2e927e5b3b41901c5b9193f"
+  },
+  {
+   "path": "apps/development/browser-vm-azure-function.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "54cd036f4c801eb76234a10b2c8c37de006bdfc9",
+   "size": 35308,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/54cd036f4c801eb76234a10b2c8c37de006bdfc9"
+  },
+  {
+   "path": "apps/development/browser-vm-docker.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "533dd41e3492fe7f35260ac9a22e0e859250f487",
+   "size": 46960,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/533dd41e3492fe7f35260ac9a22e0e859250f487"
+  },
+  {
+   "path": "apps/development/cdn-file-manager.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "80bbf244ba9c56d58195d7ee348be34c3b04f9e3",
+   "size": 26654,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/80bbf244ba9c56d58195d7ee348be34c3b04f9e3"
+  },
+  {
+   "path": "apps/development/code-snippet-manager.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "6bd327a17364e7a54e2155bb2b72e825791a4ab9",
+   "size": 18771,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/6bd327a17364e7a54e2155bb2b72e825791a4ab9"
+  },
+  {
+   "path": "apps/development/css-grid-generator.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "5d1f7e1dbcf250c1be3f9bf0f501f40ffbfd63f4",
+   "size": 18790,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/5d1f7e1dbcf250c1be3f9bf0f501f40ffbfd63f4"
+  },
+  {
+   "path": "apps/development/database-designer.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "3a45d70cdf49b218bf2d899069a376a5a5956512",
+   "size": 18757,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/3a45d70cdf49b218bf2d899069a376a5a5956512"
+  },
+  {
+   "path": "apps/development/digit-recognition-wasm.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "6d06c6362cb59d7e315294bf1ac5fbab43981051",
+   "size": 30142,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/6d06c6362cb59d7e315294bf1ac5fbab43981051"
+  },
+  {
+   "path": "apps/development/docker-compose-builder.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "82494a431c350e9b2ac0f93d289bcca999b78d08",
+   "size": 18817,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/82494a431c350e9b2ac0f93d289bcca999b78d08"
+  },
+  {
+   "path": "apps/development/git-visualizer.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "80cc197ec32e324b33cdf08ee2ca1610fb9b86b7",
+   "size": 18760,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/80cc197ec32e324b33cdf08ee2ca1610fb9b86b7"
+  },
+  {
+   "path": "apps/development/graphql-playground.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "4a73222a77dbbba1811fd4a425ae4a5decbe9281",
+   "size": 18755,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/4a73222a77dbbba1811fd4a425ae4a5decbe9281"
+  },
+  {
+   "path": "apps/development/iframe-tunneler-10.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "d6861249f7769b3cc187f20547cca90833b81c85",
+   "size": 50831,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/d6861249f7769b3cc187f20547cca90833b81c85"
+  },
+  {
+   "path": "apps/development/json-schema-designer.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "dd89b020b51076da1286a567923cda7c12907363",
+   "size": 18794,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/dd89b020b51076da1286a567923cda7c12907363"
+  },
+  {
+   "path": "apps/development/performance-profiler.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "aa2cdbe55875f7512f6dde3a76f9b885c364eb2e",
+   "size": 18787,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/aa2cdbe55875f7512f6dde3a76f9b885c364eb2e"
+  },
+  {
+   "path": "apps/development/regex-builder.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "5157ea5c1457a4a3a9b50972c0df14e049e7459f",
+   "size": 18776,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/5157ea5c1457a4a3a9b50972c0df14e049e7459f"
+  },
+  {
+   "path": "apps/development/service-worker-manager.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "882dc27e2aaef5f60a3a2051df0ae5709148d7cd",
+   "size": 18795,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/882dc27e2aaef5f60a3a2051df0ae5709148d7cd"
+  },
+  {
+   "path": "apps/development/typescript-playground.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "7978d6598b499ec6d1ba15e1eca135e38c25ecae",
+   "size": 18777,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/7978d6598b499ec6d1ba15e1eca135e38c25ecae"
+  },
+  {
+   "path": "apps/development/web-component-builder.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "a8e64a9c87dccea2df81827d3d044bdc99b09f15",
+   "size": 18785,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/a8e64a9c87dccea2df81827d3d044bdc99b09f15"
+  },
+  {
+   "path": "apps/development/webpack-config-generator.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "8e131f4b6579a5ac5f5311af4996c2448f979e5b",
+   "size": 18811,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/8e131f4b6579a5ac5f5311af4996c2448f979e5b"
+  },
+  {
+   "path": "apps/development/websocket-debugger.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "31b16d13fe0b0379db2db6b5817361ce3421540d",
+   "size": 18805,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/31b16d13fe0b0379db2db6b5817361ce3421540d"
+  },
+  {
+   "path": "apps/education",
+   "mode": "040000",
+   "type": "tree",
+   "sha": "91115f0c281854fb3d1726307a8ca45ccc36343f",
+   "url": "https://api.github.com/repos/kody-w/base/git/trees/91115f0c281854fb3d1726307a8ca45ccc36343f"
+  },
+  {
+   "path": "apps/education/chemistry-lab-simulator.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "7268eedb30434487488ad60c0b32d8f4cdc5d520",
+   "size": 18768,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/7268eedb30434487488ad60c0b32d8f4cdc5d520"
+  },
+  {
+   "path": "apps/education/code-learning-path.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "c647bdfe6fa3b86197f6287b1421eed4e7aaf3f7",
+   "size": 18737,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/c647bdfe6fa3b86197f6287b1421eed4e7aaf3f7"
+  },
+  {
+   "path": "apps/education/language-flashcards.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "36598c8c44829a4570128769e233bc71afe77d1d",
+   "size": 18752,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/36598c8c44829a4570128769e233bc71afe77d1d"
+  },
+  {
+   "path": "apps/education/math-formula-visualizer.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "a08ec0c9dfff21c205863cc3977e22e71fe3c14b",
+   "size": 18787,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/a08ec0c9dfff21c205863cc3977e22e71fe3c14b"
+  },
+  {
+   "path": "apps/education/physics-playground.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "a416fffd0965d527cf91c4c99ba7f36cc08a710c",
+   "size": 18754,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/a416fffd0965d527cf91c4c99ba7f36cc08a710c"
+  },
+  {
+   "path": "apps/games",
+   "mode": "040000",
+   "type": "tree",
+   "sha": "47e4af97f5278af70602349a0f31046baa9a5f30",
+   "url": "https://api.github.com/repos/kody-w/base/git/trees/47e4af97f5278af70602349a0f31046baa9a5f30"
+  },
+  {
+   "path": "apps/games/algorithm-arena.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "d77311f827c9a4b063a97d8afd6ea98e8ef80ea7",
+   "size": 18803,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/d77311f827c9a4b063a97d8afd6ea98e8ef80ea7"
+  },
+  {
+   "path": "apps/games/balatro-clone.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "61c9ca21883a7fd23c5e46fd65d4abe3ba346ae5",
+   "size": 83269,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/61c9ca21883a7fd23c5e46fd65d4abe3ba346ae5"
+  },
+  {
+   "path": "apps/games/civ-simulator.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "abc22842fc7d2e95921684521628549c23974bfd",
+   "size": 33067,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/abc22842fc7d2e95921684521628549c23974bfd"
+  },
+  {
+   "path": "apps/games/code-warriors.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "3f2771589e0c82c465fd808d19ebf918ff8065c6",
+   "size": 18732,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/3f2771589e0c82c465fd808d19ebf918ff8065c6"
+  },
+  {
+   "path": "apps/games/crypto-miner-tycoon.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "59eb64cee67a494b7540e4e457e7ad53287625ac",
+   "size": 18799,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/59eb64cee67a494b7540e4e457e7ad53287625ac"
+  },
+  {
+   "path": "apps/games/drone-simulator-link-app.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "273e21c714bcc5fca8f8b3a860abda31aa66e3ad",
+   "size": 5755,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/273e21c714bcc5fca8f8b3a860abda31aa66e3ad"
+  },
+  {
+   "path": "apps/games/drone-simulator.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "81275ef7bce4e9ca184249e7b7e1108e53309869",
+   "size": 14056,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/81275ef7bce4e9ca184249e7b7e1108e53309869"
+  },
+  {
+   "path": "apps/games/feedShyworm4.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "64cd8cb655344994eb45f539a406596a8e953d79",
+   "size": 42068,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/64cd8cb655344994eb45f539a406596a8e953d79"
+  },
+  {
+   "path": "apps/games/fractal-explorer.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "7d4a7739e9d5b95524e80a261e42c82fea3c8feb",
+   "size": 18764,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/7d4a7739e9d5b95524e80a261e42c82fea3c8feb"
+  },
+  {
+   "path": "apps/games/gameboy-emulator.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "30c8ab37c3f9c4cea4ca7c55dc5d42a23f316139",
+   "size": 29740,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/30c8ab37c3f9c4cea4ca7c55dc5d42a23f316139"
+  },
+  {
+   "path": "apps/games/gameoflife.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "5d44f52eec168d077ea199d5d660a21f79c35bb9",
+   "size": 46562,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/5d44f52eec168d077ea199d5d660a21f79c35bb9"
+  },
+  {
+   "path": "apps/games/hacker-simulator.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "601f5a88070b080e6e4281b2b4ee69b6d5fbe0ac",
+   "size": 18803,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/601f5a88070b080e6e4281b2b4ee69b6d5fbe0ac"
+  },
+  {
+   "path": "apps/games/hex-empire.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "48ac178c4334f2fe26439a79ef1d23485af30303",
+   "size": 18789,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/48ac178c4334f2fe26439a79ef1d23485af30303"
+  },
+  {
+   "path": "apps/games/memory-matrix.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "ad09a7ed23d998ccbfe9360848a2bfd225e45a12",
+   "size": 18800,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/ad09a7ed23d998ccbfe9360848a2bfd225e45a12"
+  },
+  {
+   "path": "apps/games/neural-network-racing.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "0f97e40235981c0f5f82a0b1dd37cd1e6ba532f4",
+   "size": 18786,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/0f97e40235981c0f5f82a0b1dd37cd1e6ba532f4"
+  },
+  {
+   "path": "apps/games/particle-life.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "16015a7870dfea22edaee4884ccdf76639be9a04",
+   "size": 18774,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/16015a7870dfea22edaee4884ccdf76639be9a04"
+  },
+  {
+   "path": "apps/games/pixel-physics.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "f0deadaab4993846a10cb1a09f6fb0cfe752da14",
+   "size": 18766,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/f0deadaab4993846a10cb1a09f6fb0cfe752da14"
+  },
+  {
+   "path": "apps/games/pokemon-generator-full-html.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "0c90c02aa9c6e02f9f3109e2c18138ee5cbfa7aa",
+   "size": 41666,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/0c90c02aa9c6e02f9f3109e2c18138ee5cbfa7aa"
+  },
+  {
+   "path": "apps/games/poker-trainer-continued.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "e789830f37b2c4ef751c63bea7a9944ffb9e122e",
+   "size": 71991,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/e789830f37b2c4ef751c63bea7a9944ffb9e122e"
+  },
+  {
+   "path": "apps/games/racing.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "2ba8e2b2b80be2a539e90546d8ec89565661ecd9",
+   "size": 154810,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/2ba8e2b2b80be2a539e90546d8ec89565661ecd9"
+  },
+  {
+   "path": "apps/games/racing2.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "3512df71c95aa0ea2fb4bab59f3917e998fa4d8c",
+   "size": 38380,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/3512df71c95aa0ea2fb4bab59f3917e998fa4d8c"
+  },
+  {
+   "path": "apps/games/rhythm-coder.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "f0b7701a691f04b0d7cc980962c701211236a9c5",
+   "size": 18763,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/f0b7701a691f04b0d7cc980962c701211236a9c5"
+  },
+  {
+   "path": "apps/games/roblox-clone.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "686ab7d9827449461895d911d0ab452419889028",
+   "size": 23639,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/686ab7d9827449461895d911d0ab452419889028"
+  },
+  {
+   "path": "apps/games/space-colony-builder.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "36540f2ad28b19f75f3bad5ca561c8e1829307ae",
+   "size": 18805,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/36540f2ad28b19f75f3bad5ca561c8e1829307ae"
+  },
+  {
+   "path": "apps/games/tile-room-3d.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "4cb72316fed5aba84e12e34550b567b1aaf2d20e",
+   "size": 21746,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/4cb72316fed5aba84e12e34550b567b1aaf2d20e"
+  },
+  {
+   "path": "apps/games/tower-defense-ai.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "1613bb53b7cef9676a6704de595ff15a12bd88b0",
+   "size": 18751,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/1613bb53b7cef9676a6704de595ff15a12bd88b0"
+  },
+  {
+   "path": "apps/games/webgl-maze-runner.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "823ffea2e46e70554b42292a6005dbd7b7163943",
+   "size": 18776,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/823ffea2e46e70554b42292a6005dbd7b7163943"
+  },
+  {
+   "path": "apps/health",
+   "mode": "040000",
+   "type": "tree",
+   "sha": "df239b33f38f3584a7886c851f9bcbff82f0bb4d",
+   "url": "https://api.github.com/repos/kody-w/base/git/trees/df239b33f38f3584a7886c851f9bcbff82f0bb4d"
+  },
+  {
+   "path": "apps/health/calorie-calculator.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "b6ec450cef8805ee4a9bed3f91e9c2ac427e9ba4",
+   "size": 18720,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/b6ec450cef8805ee4a9bed3f91e9c2ac427e9ba4"
+  },
+  {
+   "path": "apps/health/meditation-timer-pro.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "add8e6a9902f1654c82a0f50cdd2f62668eb0605",
+   "size": 18804,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/add8e6a9902f1654c82a0f50cdd2f62668eb0605"
+  },
+  {
+   "path": "apps/health/sleep-cycle-tracker.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "662af963486469bd5bc7ddf40f5e430a17aa1ee7",
+   "size": 18749,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/662af963486469bd5bc7ddf40f5e430a17aa1ee7"
+  },
+  {
+   "path": "apps/health/stress-level-monitor.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "d3dcd1611dd7188638eb772d0b26178070caaa3e",
+   "size": 18800,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/d3dcd1611dd7188638eb772d0b26178070caaa3e"
+  },
+  {
+   "path": "apps/health/workout-planner.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "7963a2b20780bfc82fe28db5717b128a03c62ca4",
+   "size": 18779,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/7963a2b20780bfc82fe28db5717b128a03c62ca4"
+  },
+  {
+   "path": "apps/media",
+   "mode": "040000",
+   "type": "tree",
+   "sha": "9fcf29b39af6c5770f3874e21440cdc13fa3d3a4",
+   "url": "https://api.github.com/repos/kody-w/base/git/trees/9fcf29b39af6c5770f3874e21440cdc13fa3d3a4"
+  },
+  {
+   "path": "apps/media/3d-model-viewer.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "034a813fb130b2a6a14c86f7cf5492ace208d97d",
+   "size": 18754,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/034a813fb130b2a6a14c86f7cf5492ace208d97d"
+  },
+  {
+   "path": "apps/media/audio-waveform-editor.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "9100bfcb921256e64e16041210d9bddce42d7815",
+   "size": 18762,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/9100bfcb921256e64e16041210d9bddce42d7815"
+  },
+  {
+   "path": "apps/media/color-blindness-simulator.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "dc80f7d2db329edaad31a653887d24f8eaac76fc",
+   "size": 18808,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/dc80f7d2db329edaad31a653887d24f8eaac76fc"
+  },
+  {
+   "path": "apps/media/drum-machine-808.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "f34f12fa4b1d92867db7aa603b1a1cb60f669070",
+   "size": 99611,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/f34f12fa4b1d92867db7aa603b1a1cb60f669070"
+  },
+  {
+   "path": "apps/media/font-pairing-tool.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "c836305a02d50d28ccbea9b543e593f80a2c5521",
+   "size": 18788,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/c836305a02d50d28ccbea9b543e593f80a2c5521"
+  },
+  {
+   "path": "apps/media/gif-maker-studio.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "80377dc6d05f17183d2a1a3fb413b27d4bb32e92",
+   "size": 18740,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/80377dc6d05f17183d2a1a3fb413b27d4bb32e92"
+  },
+  {
+   "path": "apps/media/image-metadata-viewer.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "260c05ede5f1113b37daaffe69112ee14be18185",
+   "size": 18756,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/260c05ede5f1113b37daaffe69112ee14be18185"
+  },
+  {
+   "path": "apps/media/media-format-converter.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "f2bb2169e139ef0a142091bf70186a1d6c12f831",
+   "size": 18830,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/f2bb2169e139ef0a142091bf70186a1d6c12f831"
+  },
+  {
+   "path": "apps/media/podcast-transcript-editor.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "e2db9d2bf63e011042f874e9523e3370850371ee",
+   "size": 18818,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/e2db9d2bf63e011042f874e9523e3370850371ee"
+  },
+  {
+   "path": "apps/media/svg-animation-studio.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "5bf6edc5da3133c2d5e29f1d7f22db4cf40cb747",
+   "size": 18746,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/5bf6edc5da3133c2d5e29f1d7f22db4cf40cb747"
+  },
+  {
+   "path": "apps/media/video-frame-extractor.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "92c8c91d996ff6d69fc8ab450dff3dac3b617ad9",
+   "size": 18785,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/92c8c91d996ff6d69fc8ab450dff3dac3b617ad9"
+  },
+  {
+   "path": "apps/media/webgl-particle-universe.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "24d853540ebad7ce68a8344bc551cbcaba89bfb3",
+   "size": 36895,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/24d853540ebad7ce68a8344bc551cbcaba89bfb3"
+  },
+  {
+   "path": "apps/productivity",
+   "mode": "040000",
+   "type": "tree",
+   "sha": "04c52403328484b01ad41e34e8d81bf3994178d6",
+   "url": "https://api.github.com/repos/kody-w/base/git/trees/04c52403328484b01ad41e34e8d81bf3994178d6"
+  },
+  {
+   "path": "apps/productivity/autonomous-book-factory.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "92a899a2bb4a915f09097065075105286fa4b63b",
+   "size": 48995,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/92a899a2bb4a915f09097065075105286fa4b63b"
+  },
+  {
+   "path": "apps/productivity/book-factory-world.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "c8ec6ceda8f9a85a3a6b42539366753ddd5e5227",
+   "size": 114634,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/c8ec6ceda8f9a85a3a6b42539366753ddd5e5227"
+  },
+  {
+   "path": "apps/productivity/calendar-heatmap.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "e5dd408261b0233ca0d4ac689c16369822e09adc",
+   "size": 18781,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/e5dd408261b0233ca0d4ac689c16369822e09adc"
+  },
+  {
+   "path": "apps/productivity/compressed-book-factory.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "a8c8774006d56799de06c28c4453a46b6a8df15e",
+   "size": 35350,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/a8c8774006d56799de06c28c4453a46b6a8df15e"
+  },
+  {
+   "path": "apps/productivity/decision-matrix-tool.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "383b275d96f70cfbe3a26841b6ff12b722802972",
+   "size": 18827,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/383b275d96f70cfbe3a26841b6ff12b722802972"
+  },
+  {
+   "path": "apps/productivity/email-template-designer.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "74e7ced225abe6bcdc662cb788cfb7144d140d49",
+   "size": 18769,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/74e7ced225abe6bcdc662cb788cfb7144d140d49"
+  },
+  {
+   "path": "apps/productivity/focus-flow-timer.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "0c4adfd188b91e80f6cbcf71d8e14791c42468b5",
+   "size": 18777,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/0c4adfd188b91e80f6cbcf71d8e14791c42468b5"
+  },
+  {
+   "path": "apps/productivity/habit-tracker-matrix.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "a8ba2cace0661f4661502df6c004cf594e900db2",
+   "size": 18768,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/a8ba2cace0661f4661502df6c004cf594e900db2"
+  },
+  {
+   "path": "apps/productivity/knowledge-graph-builder.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "3b7d746694257d9a8a93c17aceedc5f7165eb7f3",
+   "size": 18821,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/3b7d746694257d9a8a93c17aceedc5f7165eb7f3"
+  },
+  {
+   "path": "apps/productivity/meeting-cost-calculator.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "aca400aaf062847c5541afe09547021415a36cc5",
+   "size": 18762,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/aca400aaf062847c5541afe09547021415a36cc5"
+  },
+  {
+   "path": "apps/productivity/memory-palace.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "9940e9ab60eccc5e90091db96e99a2358371302a",
+   "size": 31032,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/9940e9ab60eccc5e90091db96e99a2358371302a"
+  },
+  {
+   "path": "apps/productivity/mind-map-builder.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "ac890ad3201ed3dcefaf03eccab49b0f50a60794",
+   "size": 18708,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/ac890ad3201ed3dcefaf03eccab49b0f50a60794"
+  },
+  {
+   "path": "apps/productivity/okr-tracker.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "2d40b8b278b6191ead6e86139251042342dd748e",
+   "size": 18743,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/2d40b8b278b6191ead6e86139251042342dd748e"
+  },
+  {
+   "path": "apps/productivity/omni-writer.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "4e6e2f8835069fdf1f0ad30c7b1915705bfbf57a",
+   "size": 80746,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/4e6e2f8835069fdf1f0ad30c7b1915705bfbf57a"
+  },
+  {
+   "path": "apps/productivity/presentation_app_complete.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "a1e4d4ce60738df7510fedb769b0ffa3cf4aedfa",
+   "size": 65620,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/a1e4d4ce60738df7510fedb769b0ffa3cf4aedfa"
+  },
+  {
+   "path": "apps/productivity/project-timeline-creator.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "f68959676e487b500bb295630ca5736bf76aac46",
+   "size": 18795,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/f68959676e487b500bb295630ca5736bf76aac46"
+  },
+  {
+   "path": "apps/productivity/smart-task-scheduler.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "cb13ae735af8d8a1ba6d4c9ced96e7356b3c6144",
+   "size": 18809,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/cb13ae735af8d8a1ba6d4c9ced96e7356b3c6144"
+  },
+  {
+   "path": "apps/productivity/speed-reading-trainer.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "98aa422acf5096400b7d26a4b88e473f856bb00e",
+   "size": 18839,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/98aa422acf5096400b7d26a4b88e473f856bb00e"
+  },
+  {
+   "path": "apps/productivity/team-standup-timer.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "07837fb476f61386336bf2b8406c7c78a4977fbf",
+   "size": 18775,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/07837fb476f61386336bf2b8406c7c78a4977fbf"
+  },
+  {
+   "path": "apps/productivity/time-zone-dashboard.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "894103cd464661ba44dcaed586355ef3162b96c8",
+   "size": 18819,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/894103cd464661ba44dcaed586355ef3162b96c8"
+  },
+  {
+   "path": "apps/productivity/timezone-converter-tool.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "81cbf38413e4fec6d24ab17d60c9132f7d54239e",
+   "size": 26035,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/81cbf38413e4fec6d24ab17d60c9132f7d54239e"
+  },
+  {
+   "path": "apps/productivity/workflow-automator.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "5b4274ea6ad2fe0f0f940e998387bda96dbbbee6",
+   "size": 18725,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/5b4274ea6ad2fe0f0f940e998387bda96dbbbee6"
+  },
+  {
+   "path": "apps/utilities",
+   "mode": "040000",
+   "type": "tree",
+   "sha": "fb3f4f58914105be950dc97838efbba5b73fc83a",
+   "url": "https://api.github.com/repos/kody-w/base/git/trees/fb3f4f58914105be950dc97838efbba5b73fc83a"
+  },
+  {
+   "path": "apps/utilities/base64-encoder-suite.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "e0eaa343518e843bf976d4cf37432e3af316d824",
+   "size": 18757,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/e0eaa343518e843bf976d4cf37432e3af316d824"
+  },
+  {
+   "path": "apps/utilities/browser-storage-manager.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "5c4b2aa36cbd005cd20a554f8231250a98f61041",
+   "size": 18778,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/5c4b2aa36cbd005cd20a554f8231250a98f61041"
+  },
+  {
+   "path": "apps/utilities/clipboard-history-manager.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "18f7c7cce0ce1fc317eb6816cefa98008d559762",
+   "size": 5006,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/18f7c7cce0ce1fc317eb6816cefa98008d559762"
+  },
+  {
+   "path": "apps/utilities/cron-expression-builder.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "55193fe8270ddc79ec3dc7b1e75f0d1a74704041",
+   "size": 18773,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/55193fe8270ddc79ec3dc7b1e75f0d1a74704041"
+  },
+  {
+   "path": "apps/utilities/file-hash-calculator.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "4f9511fe25dcda206d431cec0215a4c1f533f146",
+   "size": 18804,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/4f9511fe25dcda206d431cec0215a4c1f533f146"
+  },
+  {
+   "path": "apps/utilities/ghz-mvp-messenger.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "7b4f75c02bda4147bd83be0bf40c78460acec596",
+   "size": 18094,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/7b4f75c02bda4147bd83be0bf40c78460acec596"
+  },
+  {
+   "path": "apps/utilities/ghz-three-person-sync.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "52f9ebfe11461444d5f082770e0de6b28cfa23fc",
+   "size": 22754,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/52f9ebfe11461444d5f082770e0de6b28cfa23fc"
+  },
+  {
+   "path": "apps/utilities/lorem-ipsum-plus.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "b8d18211a21900134da0e937a4e542a8037fbc51",
+   "size": 18754,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/b8d18211a21900134da0e937a4e542a8037fbc51"
+  },
+  {
+   "path": "apps/utilities/network-speed-test.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "0b56b53789edab07c42413373d49676ed7bccf4b",
+   "size": 18736,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/0b56b53789edab07c42413373d49676ed7bccf4b"
+  },
+  {
+   "path": "apps/utilities/password-strength-analyzer.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "2a1d92a65809e22cb988f8c15a4a8f5558d18052",
+   "size": 18831,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/2a1d92a65809e22cb988f8c15a4a8f5558d18052"
+  },
+  {
+   "path": "apps/utilities/qr-code-studio.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "c2bfc3acb8bacb9c09816b62ac7bf07e21e7109c",
+   "size": 18724,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/c2bfc3acb8bacb9c09816b62ac7bf07e21e7109c"
+  },
+  {
+   "path": "apps/utilities/quantum-reality-driver-enhanced.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "51c4fd48deaff2978b48b9a88750c45b076bd0b4",
+   "size": 42576,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/51c4fd48deaff2978b48b9a88750c45b076bd0b4"
+  },
+  {
+   "path": "apps/utilities/quantum-seal-detector.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "4468cb53f1a4b18c3e7aea94fe4a6304dbdb375d",
+   "size": 18682,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/4468cb53f1a4b18c3e7aea94fe4a6304dbdb375d"
+  },
+  {
+   "path": "apps/utilities/quantum-seal-system.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "677dba440fe46383c25b4a92b0595d68236adf2a",
+   "size": 41306,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/677dba440fe46383c25b4a92b0595d68236adf2a"
+  },
+  {
+   "path": "apps/utilities/quantum-sealed-messenger.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "7fec4deff1738b87b13495a5f882de4da6e5bf41",
+   "size": 33006,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/7fec4deff1738b87b13495a5f882de4da6e5bf41"
+  },
+  {
+   "path": "apps/utilities/quantum-synchronized-ftl.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "bb8eb17c7b4309754c96debb34a6374cf5df3e22",
+   "size": 31899,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/bb8eb17c7b4309754c96debb34a6374cf5df3e22"
+  },
+  {
+   "path": "apps/utilities/quantum-tripartite-messenger.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "0577badd03092baa173af900cf5a596f4b455c99",
+   "size": 37039,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/0577badd03092baa173af900cf5a596f4b455c99"
+  },
+  {
+   "path": "apps/utilities/quantum-vm-threejs.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "d88cf80db302f5a32412d0f5be44c93371e1e92b",
+   "size": 28123,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/d88cf80db302f5a32412d0f5be44c93371e1e92b"
+  },
+  {
+   "path": "apps/utilities/screen-recorder-lite.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "44156c8830bf467988d4f1bb603ab4c2b0f6f7d2",
+   "size": 4992,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/44156c8830bf467988d4f1bb603ab4c2b0f6f7d2"
+  },
+  {
+   "path": "apps/utilities/system-monitor.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "4709d1aa429a683215ed0a16c73c52931ea98af1",
+   "size": 18747,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/4709d1aa429a683215ed0a16c73c52931ea98af1"
+  },
+  {
+   "path": "apps/utilities/uuid-generator-pro.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "59985dae98fdf002ba6e7e2df76b4fdd4de48042",
+   "size": 18865,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/59985dae98fdf002ba6e7e2df76b4fdd4de48042"
+  },
+  {
+   "path": "data",
+   "mode": "040000",
+   "type": "tree",
+   "sha": "9ebd2bb0b261248f18295d68c6f82c856ef50a48",
+   "url": "https://api.github.com/repos/kody-w/base/git/trees/9ebd2bb0b261248f18295d68c6f82c856ef50a48"
+  },
+  {
+   "path": "data/api",
+   "mode": "040000",
+   "type": "tree",
+   "sha": "ea562d5aadfcab7a897d067399eacba014c768ff",
+   "url": "https://api.github.com/repos/kody-w/base/git/trees/ea562d5aadfcab7a897d067399eacba014c768ff"
+  },
+  {
+   "path": "data/api/tree.json",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "c8153657776cc0c168904e51d377575fe1862b8a",
+   "size": 54930,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/c8153657776cc0c168904e51d377575fe1862b8a"
+  },
+  {
+   "path": "index.html",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "72303119338e38b2da02b867f3c41d3c8675d17f",
+   "size": 85853,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/72303119338e38b2da02b867f3c41d3c8675d17f"
+  },
+  {
+   "path": "link_validation_report.md",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "2a90cea701ad4c570a13f76e9e63a61c78219685",
+   "size": 3709,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/2a90cea701ad4c570a13f76e9e63a61c78219685"
+  },
+  {
+   "path": "robots.txt",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "68faa4fb2ca954112788965e3176b79b1c808450",
+   "size": 74,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/68faa4fb2ca954112788965e3176b79b1c808450"
+  },
+  {
+   "path": "scripts",
+   "mode": "040000",
+   "type": "tree",
+   "sha": "4faad86a1d337ec64c5a18b91810053e945604f5",
+   "url": "https://api.github.com/repos/kody-w/base/git/trees/4faad86a1d337ec64c5a18b91810053e945604f5"
+  },
+  {
+   "path": "scripts/harvest_agent_browser_data.py",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "d2240997bcf79171ed7798dc8be83ec221986b51",
+   "size": 2705,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/d2240997bcf79171ed7798dc8be83ec221986b51"
+  },
+  {
+   "path": "scripts/harvest_deployment_agents.py",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "61c7f2d6ae0eba8795229604cfa00eb28d2f099a",
+   "size": 1756,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/61c7f2d6ae0eba8795229604cfa00eb28d2f099a"
+  },
+  {
+   "path": "scripts/harvest_tree.py",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "2f4ccd991c74f811eb8598f4268b192ed90a546f",
+   "size": 1675,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/2f4ccd991c74f811eb8598f4268b192ed90a546f"
+  },
+  {
+   "path": "update-existing-repo.sh",
+   "mode": "100644",
+   "type": "blob",
+   "sha": "55f55f7a92a82038cc5e832c2fc3a5288fd5b1ec",
+   "size": 3512,
+   "url": "https://api.github.com/repos/kody-w/base/git/blobs/55f55f7a92a82038cc5e832c2fc3a5288fd5b1ec"
+  }
+ ],
+ "truncated": false
 }
